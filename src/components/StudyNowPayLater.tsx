@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,7 +10,7 @@ const StudyNowPayLater = () => {
   const line1Ref = useRef<HTMLDivElement>(null);
   const line2Ref = useRef<HTMLDivElement>(null);
   const line3Ref = useRef<HTMLDivElement>(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const lines = [line1Ref.current, line2Ref.current, line3Ref.current];
 
@@ -36,40 +37,39 @@ const StudyNowPayLater = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section ref={sectionRef} className="py-32 bg-black text-white relative overflow-hidden font-sans">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-6xl mx-auto space-y-8">
           <div className="overflow-hidden">
-            <div ref={line1Ref} className="text-display">
-              STUDY NOW.
+            <div ref={line1Ref} className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white">
+              FREE FOREVER,
             </div>
           </div>
           <div className="overflow-hidden">
-            <div ref={line2Ref} className="text-display text-accent">
-              PAY LATER.
+            <div ref={line2Ref} className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-teal-400">
+              NO LOGINS
             </div>
           </div>
           <div className="overflow-hidden">
-            <div ref={line3Ref} className="text-display">
+            <div ref={line3Ref} className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white">
               SUCCEED ALWAYS.
             </div>
           </div>
         </div>
 
         <div className="mt-20 max-w-2xl mx-auto">
-          <p className="text-2xl text-muted-foreground leading-relaxed">
-            No upfront fees. Pay only after you land your dream job. We invest in your future
-            because we believe in your potential.
+          <p className="text-xl text-white/70 leading-relaxed">
+            100% free access to all study materials, no sign-ups required. Focus on learning with our AI-powered summaries and resources designed to help you excel in your exams.
           </p>
-          <button className="mt-12 px-12 py-6 bg-accent text-background uppercase text-lg font-bold tracking-wider hover:bg-accent/90 transition-colors">
-            Learn More
+          <button onClick={()=>navigate("/subjects/resources")} className="mt-12 px-10 py-4 bg-teal-500 text-black uppercase text-sm font-bold tracking-wider hover:bg-teal-600 transition-colors rounded-lg">
+            get started
           </button>
         </div>
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-1/2 left-0 w-px h-1/2 bg-border" />
-      <div className="absolute top-1/2 right-0 w-px h-1/2 bg-border" />
+      <div className="absolute top-1/2 left-0 w-px h-1/2 bg-white/10" />
+      <div className="absolute top-1/2 right-0 w-px h-1/2 bg-white/10" />
     </section>
   );
 };

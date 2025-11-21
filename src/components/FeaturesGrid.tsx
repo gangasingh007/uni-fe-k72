@@ -84,7 +84,7 @@ const FeaturesGrid = () => {
     <section className={`py-32 bg-background relative ${hoveredIndex !== null ? 'cursor-none' : ''}`} id="features">
       <div className="container mx-auto px-6">
         <h2 ref={titleRef} className="text-display mb-20 text-center">
-          Everything for <span className='text-teal-500'> Students </span>
+          Everything for <span className='text-teal-500'> exams </span>
           With Single Click <span className='text-teal-500'>AI Summarization</span>
         </h2>
 

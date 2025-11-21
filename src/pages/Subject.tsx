@@ -223,7 +223,7 @@ const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
       />
 
       {/* Content Layout */}
-      <div className="relative z-10 h-full p-10 flex flex-col justify-between">
+      <div className="relative border border-white/20 z-10 h-full p-10 flex flex-col justify-between">
         
         {/* Top: Icon */}
         <div className={`transition-colors duration-300 ${

@@ -12,24 +12,24 @@ const navLinks = [
 
 const menuItems = [
   {
+    text: 'Home',
+    link: '/',
+    image: 'https://images.unsplash.com/photo-1536148935331-408321065b18?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+  },
+  {
+    text: 'subjects',
+    link: '/subjects/resources',
+    image: 'https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+  },
+  {
     text: 'Syllabus',
-    link: '#syllabus',
-    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80',
+    link: '/syllabus',
+    image: 'https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
   },
   {
-    text: 'Results',
-    link: '#results',
-    image: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    text: 'Jobs',
-    link: '#jobs',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    text: 'Mentorship',
-    link: '#mentorship',
-    image: 'https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=600&q=80',
+    text: 'datesheet',
+    link: '/datesheet',
+    image: 'https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
   },
 ];
 
