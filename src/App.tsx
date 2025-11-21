@@ -10,6 +10,9 @@ import CustomCursor from "./components/CustomCursor";
 import StairTransition from "./components/StairTransition";
 import Navbar from "./components/Navbar";
 import SummaryPage from "./pages/SummaryPage";
+import Syllabus from "./pages/Syllabus";
+import DateSheet from "./pages/DateSheet";
+import ExplorePage from "./ExplorePage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path="/subjects/resources" element={<SubjectPage />} />
           <Route path="/summary" element={<SummaryPage />} />
+          <Route path="/syllabus" element={<Syllabus />} />
+          <Route path="/explore" element={<ExplorePage />} />
+          <Route path="/datesheet" element={<DateSheet />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

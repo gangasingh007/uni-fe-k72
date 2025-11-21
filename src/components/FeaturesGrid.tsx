@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -17,23 +18,23 @@ const features = [
   },
   {
     icon: Book,
-    link:"/subjects/resources",  
+    link:"/syllabus",  
     title: 'Syllabus',
     description: 'View your syllabus',
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800',
   },
   {
     icon: Calendar,
-    link:"/subjects/resources",
+    link:"/datesheet",
     title: 'DateSheet',
     description: 'View your exam schedule',
     image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800',
   },
   {
     icon: Compass,
-    link:"/subjects/resources",
+    link:"/explore",
     title: 'Explore',
-    description: 'Explore more features',
+    description: 'Explore the architecture of our platform',
     image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800',
   },
 ];
@@ -42,6 +43,7 @@ const FeaturesGrid = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const cursorImageRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const navigate = useNavigate();
 
   useGSAP(() => {
     if (!titleRef.current) return;
@@ -90,9 +92,8 @@ const FeaturesGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border" onMouseLeave={handleMouseLeave}>
           {features.map((feature, index) => (
-            <a href={feature.link} key={index}>
+            <div onClick={() => navigate(feature.link)} key={index}>
               <div
-              key={index}
                 className="group relative bg-background p-12 hover:bg-accent transition-all duration-500"
               onMouseMove={(e) => handleMouseMove(e, index)}
             >
@@ -111,7 +112,7 @@ const FeaturesGrid = () => {
                 </div>
               </div>
             </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

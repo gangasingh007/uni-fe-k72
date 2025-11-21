@@ -29,10 +29,9 @@ const Footer = () => {
             </p>
             
             <div className="flex gap-4 pt-6">
-              <SocialButton icon={<Twitter size={18} />} />
-              <SocialButton icon={<Linkedin size={18} />} />
-              <SocialButton icon={<Instagram size={18} />} />
-              <SocialButton icon={<Github size={18} />} />
+              <SocialButton href="https://x.com/gangasingh1734" icon={<Twitter size={18} />} />
+              <SocialButton href="https://www.instagram.com/ganga.singh.007/" icon={<Instagram size={18} />} />
+              <SocialButton href="https://github.com/gangasingh007" icon={<Github size={18} />} />
             </div>
           </div>
 
@@ -43,10 +42,9 @@ const Footer = () => {
               <span className="w-8 h-px bg-teal-500/30" />
             </h4>
             <ul className="space-y-4">
-              <FooterLink href="#syllabus">Syllabus & Curriculum</FooterLink>
-              <FooterLink href="#results">Examination Results</FooterLink>
-              <FooterLink href="#jobs">Career Connect</FooterLink>
-              <FooterLink href="#mentorship">Expert Mentorship</FooterLink>
+              <FooterLink href="#">Syllabus & Curriculum</FooterLink>
+              <FooterLink href="#">Datesheet</FooterLink>
+              <FooterLink href="#">Explore</FooterLink>
             </ul>
           </div>
 
@@ -103,9 +101,11 @@ const FooterLink = ({ href, children }: { href: string, children: React.ReactNod
   </li>
 );
 
-const SocialButton = ({ icon }: { icon: React.ReactNode }) => (
-    <a 
-      href="#" 
+const SocialButton = ({ icon, href }: { icon: React.ReactNode; href: string }) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:bg-teal-500 hover:text-black hover:border-teal-500 hover:scale-110 transition-all duration-300"
     >
         {icon}

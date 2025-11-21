@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import type { MouseEvent } from 'react';
 import { gsap } from 'gsap';
+import { useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
 
 const navLinks = [
@@ -31,7 +32,13 @@ const menuItems = [
     link: '/datesheet',
     image: 'https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
   },
+  {
+    text: 'Explore',
+    link: '/explore',
+    image: 'https://images.unsplash.com/photo-1550439062-609e1531270e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D',
+  },
 ];
+  
 
 const STAIRS_COUNT = 6;
 
@@ -42,6 +49,7 @@ const Navbar = () => {
   const contentRef = useRef<HTMLDivElement>(null);
   const stairsRefs = useRef<Array<HTMLDivElement | null>>([]);
   const timelineRef = useRef<gsap.core.Timeline | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     stairsRefs.current = stairsRefs.current.slice(0, STAIRS_COUNT);
@@ -101,6 +109,11 @@ const Navbar = () => {
     return () => {
       document.body.style.overflow = '';
     };
+  }, [isMenuOpen]);
+
+  const handleNavigate = useMemo(() => (link: string) => {
+    setIsMenuOpen(false);
+    navigate(link);
   }, [isMenuOpen]);
 
   return (
@@ -176,7 +189,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex-1 overflow-hidden pt-6">
-            <FlowingMenu items={menuItems} />
+            <FlowingMenu items={menuItems} onNavigate={handleNavigate} />
           </div>
         </div>
       </div>
@@ -188,30 +201,30 @@ interface MenuItemProps {
   link: string;
   text: string;
   image: string;
+  onNavigate: (link: string) => void;
 }
 
 interface FlowingMenuProps {
-  items?: MenuItemProps[];
+  items?: Array<Omit<MenuItemProps, 'onNavigate'>>;
+  onNavigate: (link: string) => void;
 }
 
-const FlowingMenu = ({ items = [] }: FlowingMenuProps) => {
+const FlowingMenu = ({ items = [], onNavigate }: FlowingMenuProps) => {
   return (
     <div className="flex h-full w-full flex-col overflow-hidden">
       <nav className="flex h-full flex-col">
-        {items.map((item, idx) => (
-          <MenuItem key={`${item.text}-${idx}`} {...item} />
-        ))}
+        {items.map((item, idx) => <MenuItem key={`${item.text}-${idx}`} {...item} onNavigate={onNavigate} />)}
       </nav>
     </div>
   );
 };
 
-const MenuItem = ({ link, text, image }: MenuItemProps) => {
+const MenuItem = ({ link, text, image, onNavigate }: MenuItemProps) => {
   const itemRef = useRef<HTMLDivElement>(null);
   const marqueeRef = useRef<HTMLDivElement>(null);
   const marqueeInnerRef = useRef<HTMLDivElement>(null);
 
-  const animationDefaults = { duration: 0.6, ease: 'expo.out' };
+  const animationDefaults = { duration: 0.6, ease: 'power3.out' };
 
   const findClosestEdge = (
     mouseX: number,
@@ -270,8 +283,8 @@ const MenuItem = ({ link, text, image }: MenuItemProps) => {
       className="relative overflow-hidden flex-1 text-center shadow-[0_-1px_0_0_#fff] transition-colors hover:bg-accent/10"
     >
       <a
-        className="relative flex h-full cursor-pointer items-center justify-center font-semibold uppercase text-white text-[4vh] no-underline hover:text-[#060010]"
-        href={link}
+        className="relative flex h-full w-full cursor-pointer items-center justify-center font-semibold uppercase text-white text-[4vh] no-underline hover:text-[#060010]"
+        onClick={() => onNavigate(link)}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
