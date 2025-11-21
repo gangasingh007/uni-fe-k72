@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
+import { useNavigate } from 'react-router-dom'; // Added for navigation
 import { 
   FileText, 
   Youtube, 
@@ -11,10 +12,9 @@ import {
   AlertTriangle, 
   LayoutGrid,
   BookOpen,
-  Sparkles,
-  ArrowUpRight
+  Sparkles
 } from 'lucide-react';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -73,7 +73,6 @@ const SubjectPage = () => {
 
   // --- GSAP Animations ---
   useGSAP(() => {
-    // Animate main title
     const title = document.querySelector('.main-title');
     if (title) {
       gsap.from(title, {
@@ -84,7 +83,6 @@ const SubjectPage = () => {
       });
     }
 
-    // Animate sections on scroll
     const sections = gsap.utils.toArray<HTMLElement>('.subject-section');
     sections.forEach((section) => {
       gsap.from(section, {
@@ -119,10 +117,12 @@ const SubjectPage = () => {
   }
 
   return (
-<>    <main ref={containerRef} className="mt-16 min-h-screen bg-black text-white selection:bg-teal-500/30">
+    <><Navbar />
+    <main ref={containerRef} className="min-h-screen mt-[40px] bg-black text-white selection:bg-teal-500/30">
       <div className="container mx-auto px-4 sm:px-6 py-20 max-w-7xl">
         {/* Page Header */}
         <div className="text-center mb-24 main-title">
+          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white">
             Learning <span className='text-teal-500'>Resources</span>
           </h1>
@@ -160,12 +160,16 @@ const SubjectPage = () => {
                         </div>
                       </div>
 
-                      {/* Resources Grid - Matches Reference Image Layout */}
+                      {/* Resources Grid */}
                       {sub.resources.length > 0 ? (
-                        // Using gap-px and bg-white/10 creates the thin grid lines effect
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px  border border-white/20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px border border-white/20">
                           {sub.resources.map((res) => (
-                            <ResourceCard key={res._id} resource={res} />
+                            <ResourceCard 
+                              key={res._id} 
+                              resource={res} 
+                              classId={cls._id}     // Passed down for API
+                              subjectId={sub._id}   // Passed down for API
+                            />
                           ))}
                         </div>
                       ) : (
@@ -181,33 +185,45 @@ const SubjectPage = () => {
           </div>
         )}
       </div>
-    </main>
-    <Footer />
-    </>
+    </main></>
   );
 };
 
 // --- Resource Card Component ---
-const ResourceCard = ({ resource }: { resource: Resource }) => {
+interface ResourceCardProps {
+  resource: Resource;
+  classId: string;
+  subjectId: string;
+}
+
+const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
+  const navigate = useNavigate();
   const isVideo = resource.type === 'ytlink' || resource.link.includes('youtube') || resource.link.includes('youtu.be');
   
+  const handleSummarize = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Navigate to SummaryPage with query parameters
+    navigate(`/summary?classId=${classId}&subjectId=${subjectId}&resourceId=${resource._id}&link=${encodeURIComponent(resource.link)}`);
+  };
+
   return (
     <a
       href={resource.link}
       target="_blank"
       rel="noopener noreferrer"
-      // Card Base Styling
-      className="group relative block w-full   bg-black h-[320px] overflow-hidden hover:z-10 transition-all duration-500"
+      className="group relative block w-full bg-black h-[320px] overflow-hidden hover:z-10 transition-all duration-500"
     >
-      {/* Hover Background Fill (Top to Bottom) */}
+      {/* Hover Background Fill */}
       <div 
-        className={` absolute inset-0 h-0 w-full transition-[height] duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:h-full ${
-          isVideo ? 'bg-[#3d1a1a]' : 'bg-[#0f2e26]'
+        className={`absolute inset-0 h-0 w-full transition-[height] duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:h-full ${
+          isVideo ? 'bg-[#3d1a1a]' : 'bg-[#0f2e26]' 
         }`} 
       />
 
       {/* Content Layout */}
-      <div className="relative z-10 h-full p-10 flex flex-col justify-between border border-white/20">
+      <div className="relative z-10 h-full p-10 flex flex-col justify-between">
         
         {/* Top: Icon */}
         <div className={`transition-colors duration-300 ${
@@ -222,7 +238,7 @@ const ResourceCard = ({ resource }: { resource: Resource }) => {
 
         {/* Middle: Typography */}
         <div className="mt-auto mb-6">
-          <h4 className="text-3xl font-bold uppercase leading-none mb-3 text-white">
+          <h4 className="text-3xl font-bold uppercase leading-none mb-3 text-white line-clamp-2">
             {resource.title}
           </h4>
           <p className="text-white/50 group-hover:text-white/80 text-sm font-medium transition-colors duration-300">
@@ -236,21 +252,16 @@ const ResourceCard = ({ resource }: { resource: Resource }) => {
           <div className="h-10">
             {!isVideo && (
               <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  // TODO: Trigger AI Summary
-                  console.log(`Summarizing: ${resource.title}`);
-                }}
+                onClick={handleSummarize}
                 className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75 flex items-center gap-2 text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-teal-400"
               >
                 <Sparkles className="w-3 h-3" />
-                AI Summary
+                Generate AI Summary
               </button>
             )}
           </div>
 
-          {/* Circular Indicator (from reference image) */}
+          {/* Circular Indicator */}
           <div className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-500">
             <div className="w-1 h-1 bg-white rounded-full group-hover:bg-black transition-colors duration-500" />
           </div>

@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="bg-background min-h-screen">
       
-      
+      <Navbar />
       <main>
         {/* <Hero /> */}
         <FeaturesGrid />

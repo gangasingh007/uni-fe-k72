@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import type { MouseEvent } from 'react';
 import { gsap } from 'gsap';
+import { X } from 'lucide-react';
 
 const navLinks = [
   { name: 'Syllabus', href: '#syllabus' },
@@ -118,7 +119,7 @@ const Navbar = () => {
               type="button"
               aria-label="Open navigation"
               onClick={() => setIsMenuOpen(true)}
-              className="flex h-12 w-12 items-center justify-center border border-brutal hover:bg-accent hover:text-background transition-colors"
+              className="flex h-12 w-12 items-center justify-center border-1 hover:bg-accent hover:text-background transition-colors"
             >
               <span className="sr-only">Open menu</span>
               <div className="flex flex-col gap-1.5">
@@ -165,12 +166,11 @@ const Navbar = () => {
               type="button"
               aria-label="Close navigation"
               onClick={() => setIsMenuOpen(false)}
-              className="flex h-12 w-12 items-center justify-center border border-brutal hover:bg-accent hover:text-background transition-colors"
+              className="flex h-12 w-12 items-center justify-center border-1 hover:bg-accent hover:text-background transition-colors"
             >
-              <span className="sr-only">Close menu</span>
+              {/* <span className="sr-only">Close menu</span> */}
               <div className="relative h-4 w-4">
-                <span className="absolute inset-0 block h-0.5 w-full bg-current rotate-45" />
-                <span className="absolute inset-0 block h-0.5 w-full bg-current -rotate-45" />
+               <X />
               </div>
             </button>
           </div>

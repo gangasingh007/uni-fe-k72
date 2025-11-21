@@ -9,7 +9,7 @@ import SubjectPage from "./pages/Subject";
 import CustomCursor from "./components/CustomCursor";
 import StairTransition from "./components/StairTransition";
 import Navbar from "./components/Navbar";
-import { Footer } from "react-day-picker";
+import SummaryPage from "./pages/SummaryPage";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +17,6 @@ const App = () => (
   <>
   <StairTransition />
     <CustomCursor />
-    <Navbar />
     <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -27,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/subjects/resources" element={<SubjectPage />} />
+          <Route path="/summary" element={<SummaryPage />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
