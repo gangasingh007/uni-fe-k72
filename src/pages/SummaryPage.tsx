@@ -314,7 +314,7 @@ const SummaryPage = () => {
                         <div className="flex flex-col sm:flex-row gap-3">
                             <button 
                               onClick={() => setShowPreview(true)}
-                              className="flex items-center justify-center gap-2 px-6 py-9 bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:text-teal-300 rounded-lg transition-all text-xs font-bold uppercase tracking-wide group whitespace-nowrap"
+                              className="flex items-center justify-center gap-2 px-3 py-5 bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-teal-400 hover:text-teal-300 rounded-lg transition-all text-xs font-bold uppercase tracking-wide group whitespace-nowrap"
                             >
                               <FileText size={16} />
                               <span>View Original</span>
