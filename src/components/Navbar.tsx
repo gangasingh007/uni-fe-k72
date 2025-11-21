@@ -113,8 +113,11 @@ const Navbar = () => {
 
   const handleNavigate = useMemo(() => (link: string) => {
     setIsMenuOpen(false);
-    navigate(link);
-  }, [isMenuOpen]);
+    // Small delay to let menu close animation start, then navigate
+    setTimeout(() => {
+      navigate(link);
+    }, 100);
+  }, [navigate]);
 
   return (
     <>

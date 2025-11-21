@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
-import StairTransition from '@/components/StairTransition';
-import CustomCursor from '@/components/CustomCursor';
-import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import FeaturesGrid from '@/components/FeaturesGrid';
 import UniversityPartners from '@/components/UniversityPartners';
@@ -32,16 +29,13 @@ const Index = () => {
 
   return (
     <div className="bg-background min-h-screen">
-      
-      <Navbar />
       <main>
         {/* <Hero /> */}
         <FeaturesGrid />
         {/* <UniversityPartners /> */}
         <StudyNowPayLater />
       </main>
-
-   <Footer />
+      <Footer />
     </div>
   );
 };

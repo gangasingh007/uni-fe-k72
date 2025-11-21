@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
-import { useNavigate } from 'react-router-dom'; // Added for navigation
+import { useNavigate } from 'react-router-dom';
 import { 
   FileText, 
   Youtube, 
@@ -14,12 +14,11 @@ import {
   BookOpen,
   Sparkles
 } from 'lucide-react';
-import Navbar from '@/components/Navbar';
 
-// Register GSAP plugins
+
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-// --- Interfaces ---
+
 interface Resource {
   _id: string;
   title: string;
@@ -117,7 +116,6 @@ const SubjectPage = () => {
   }
 
   return (
-    <><Navbar />
     <main ref={containerRef} className="min-h-screen mt-[40px] bg-black text-white selection:bg-teal-500/30">
       <div className="container mx-auto px-4 sm:px-6 py-20 max-w-7xl">
         {/* Page Header */}
@@ -185,7 +183,7 @@ const SubjectPage = () => {
           </div>
         )}
       </div>
-    </main></>
+    </main>
   );
 };
 
