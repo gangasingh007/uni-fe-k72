@@ -10,14 +10,12 @@ import {
   Youtube, 
   LoaderCircle, 
   AlertTriangle, 
-  LayoutGrid,
   BookOpen,
-  Sparkles
+  Sparkles,
+  Hash
 } from 'lucide-react';
 
-
 gsap.registerPlugin(ScrollTrigger, SplitText);
-
 
 interface Resource {
   _id: string;
@@ -70,7 +68,7 @@ const SubjectPage = () => {
     fetchResources();
   }, []);
 
-  // --- GSAP Animations ---
+  // --- GSAP Animations (Preserved) ---
   useGSAP(() => {
     const title = document.querySelector('.main-title');
     if (title) {
@@ -116,69 +114,98 @@ const SubjectPage = () => {
   }
 
   return (
-    <main ref={containerRef} className="min-h-screen mt-[40px] bg-black text-white selection:bg-teal-500/30">
-      <div className="container mx-auto px-4 sm:px-6 py-20 max-w-7xl">
+    <main ref={containerRef} className="min-h-screen bg-black text-white selection:bg-teal-500/30">
+      <div className="container mx-auto px-4 sm:px-6 py-20 max-w-[1400px]">
+        
         {/* Page Header */}
-        <div className="text-center mb-24 main-title">
-          
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white">
-            Learning <span className='text-teal-500'>Resources</span>
+        <div className="text-center mb-32 main-title pt-10">
+          <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 text-white">
+            Learning <span className='text-teal-500'>Hub</span>
           </h1>
-          <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed font-light">
             Curated study materials, video lectures, and documentation tailored for your semester success.
           </p>
         </div>
 
         {!classResources || classResources.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-20 border border-dashed border-white/20 rounded-2xl bg-white/5">
-            <BookOpen className="w-12 h-12 text-white/30 mb-4" />
-            <p className="text-white/50 text-xl font-medium">No resources found available yet.</p>
+          <div className="flex flex-col items-center justify-center py-32 border border-dashed border-white/10 rounded-3xl bg-white/5">
+            <BookOpen className="w-16 h-16 text-white/20 mb-6" />
+            <p className="text-white/40 text-2xl font-light">No resources available yet.</p>
           </div>
         ) : (
-          <div className="space-y-32">
+          <div className="space-y-40"> {/* Increased spacing between major classes */}
             {classResources.map((cls) => (
-              <div key={cls._id}>
-                {/* Class Header */}
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-white/10 pb-6">
-                  <div>
-                    <h2 className="text-4xl font-bold tracking-tight text-white">{cls.courseName}</h2>
-                    <p className="text-white/50 mt-2 text-lg">Semester {cls.semester} • Section {cls.section}</p>
+              <section key={cls._id} className="relative">
+                
+                {/* Class Header - Now Sticky for Better UX Context */}
+                <div className="sticky top-0 z-30 bg-black/80 backdrop-blur-xl border-y border-white/10 py-6 mb-16">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 max-w-[1300px] mx-auto px-4">
+                    <div className="flex items-center gap-4">
+                      <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
+                        {cls.courseName}
+                      </h2>
+                    </div>
+                    <div className="flex items-center gap-6 text-sm text-white font-mono uppercase tracking-widest">
+                       <span>Sem {cls.semester}</span>
+                       <span className="w-1 h-1 bg-white/20 rounded-full"></span>
+                       <span>Sec {cls.section}</span>
+                    </div>
                   </div>
                 </div>
 
                 {/* Subjects Loop */}
-                <div className="space-y-20">
-                  {cls.subject.map((sub) => (
-                    <div key={sub._id} className="subject-section"> 
-                      <div className="flex items-center gap-4 mb-8">
-                        <div className="w-1.5 h-8 bg-teal-500" />
-                        <div>
-                          <h3 className="text-2xl font-bold uppercase tracking-wide text-white">{sub.title}</h3>
-                          <p className="text-sm text-white/50">Instructor: {sub.subjectTeacher}</p>
+                <div className="space-y-24 px-2 md:px-4">
+                  {cls.subject.map((sub, index) => (
+                    <div key={sub._id} className="subject-section group/subject">
+                      {/* 
+                         UX IMPROVEMENT: 
+                         Desktop: Sidebar Layout (Left Title, Right Content)
+                         Mobile: Stacked Layout
+                      */}
+                      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+                        
+                        {/* Subject Sidebar Info */}
+                        <div className="lg:w-1/4 lg:sticky lg:top-32 pt-2">
+                          <div className="flex items-center gap-3 mb-4 text-teal-500/50">
+                            <Hash className="w-5 h-5" />
+                            <span className="font-mono text-sm">0{index + 1}</span>
+                          </div>
+                          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-wide text-white mb-4 leading-none">
+                            {sub.title}
+                          </h3>
+                          <div className="flex items-center gap-3">
+                            <div className="w-8 h-[1px] bg-white/20"></div>
+                            <p className="text-sm text-white/50 font-medium tracking-wider uppercase">
+                              {sub.subjectTeacher}
+                            </p>
+                          </div>
                         </div>
-                      </div>
 
-                      {/* Resources Grid */}
-                      {sub.resources.length > 0 ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px border border-white/20">
-                          {sub.resources.map((res) => (
-                            <ResourceCard 
-                              key={res._id} 
-                              resource={res} 
-                              classId={cls._id}     // Passed down for API
-                              subjectId={sub._id}   // Passed down for API
-                            />
-                          ))}
+                        {/* Resources Grid - Occupies remaining width */}
+                        <div className="w-full lg:w-3/4">
+                          {sub.resources.length > 0 ? (
+                            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-px border border-white/20">
+                              {sub.resources.map((res) => (
+                                <ResourceCard 
+                                  key={res._id} 
+                                  resource={res} 
+                                  classId={cls._id} 
+                                  subjectId={sub._id}
+                                />
+                              ))}
+                            </div>
+                          ) : (
+                            <div className="w-full h-[200px] flex flex-col items-center justify-center border border-white/10 border-dashed rounded-lg bg-white/5">
+                              <p className="text-white/30 font-light">Pending uploads for {sub.title}</p>
+                            </div>
+                          )}
                         </div>
-                      ) : (
-                        <div className="p-12 bg-white/5 border border-white/10 text-center">
-                          <p className="text-white/40 italic">No resources uploaded for this subject yet.</p>
-                        </div>
-                      )}
+
+                      </div>
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             ))}
           </div>
         )}
@@ -187,7 +214,7 @@ const SubjectPage = () => {
   );
 };
 
-// --- Resource Card Component ---
+// --- Resource Card Component (Design & Animation Preserved) ---
 interface ResourceCardProps {
   resource: Resource;
   classId: string;
@@ -201,8 +228,6 @@ const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
   const handleSummarize = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    
-    // Navigate to SummaryPage with query parameters
     navigate(`/summary?classId=${classId}&subjectId=${subjectId}&resourceId=${resource._id}&link=${encodeURIComponent(resource.link)}`);
   };
 
@@ -221,7 +246,7 @@ const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
       />
 
       {/* Content Layout */}
-      <div className="relative border border-white/20 z-10 h-full p-10 flex flex-col justify-between">
+      <div className="relative border border-white/10 z-10 h-full p-8 md:p-10 flex flex-col justify-between">
         
         {/* Top: Icon */}
         <div className={`transition-colors duration-300 ${
@@ -236,10 +261,10 @@ const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
 
         {/* Middle: Typography */}
         <div className="mt-auto mb-6">
-          <h4 className="text-3xl font-bold uppercase leading-none mb-3 text-white line-clamp-2">
+          <h4 className="text-2xl md:text-3xl font-bold uppercase leading-none mb-3 text-white line-clamp-2">
             {resource.title}
           </h4>
-          <p className="text-white/50 group-hover:text-white/80 text-sm font-medium transition-colors duration-300">
+          <p className="text-white/50 group-hover:text-white/80 text-xs md:text-sm font-medium transition-colors duration-300 tracking-wider">
             {isVideo ? 'Watch Lecture' : 'View Document'}
           </p>
         </div>
@@ -251,16 +276,16 @@ const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
             {!isVideo && (
               <button
                 onClick={handleSummarize}
-                className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75 flex items-center gap-2 text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-teal-400"
+                className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75 flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-teal-400"
               >
                 <Sparkles className="w-3 h-3" />
-                Generate AI Summary
+                Summary
               </button>
             )}
           </div>
 
           {/* Circular Indicator */}
-          <div className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-500">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-500">
             <div className="w-1 h-1 bg-white rounded-full group-hover:bg-black transition-colors duration-500" />
           </div>
         </div>
