@@ -97,7 +97,7 @@ const SummaryPage = () => {
       setError("");
       try {
         const response = await axios.get(
-          `https://backend-uni-xb3p.onrender.com/api/v1/resource/gemini-summarize/${resourceId}`,
+          `https://backend-uni-xb3p.onrender.com/api/v1/resource/gemini-summarize/${classId}/${subjectId}/${resourceId}`,
           { signal: controller.signal }
         );
 
