@@ -12,7 +12,8 @@ import Navbar from "./components/Navbar";
 import SummaryPage from "./pages/SummaryPage";
 import Syllabus from "./pages/Syllabus";
 import DateSheet from "./pages/DateSheet";
-import ExplorePage from "./ExplorePage";
+import ExplorePage from "./pages/ExplorePage";
+
 
 const queryClient = new QueryClient();
 

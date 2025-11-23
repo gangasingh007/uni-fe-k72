@@ -356,7 +356,7 @@ const SummaryPage = () => {
                  <div className="pt-8 border-t border-white/10">
                     <div className="grid grid-cols-2 gap-y-6 gap-x-4">
                        <StatItem icon={<Calendar size={14} />} label="Generated" value={new Date().toLocaleDateString()} />
-                       <StatItem icon={<Bot size={14} />} label="ResourceID" value={resourceId} color="text-teal-400" />
+                       <StatItem icon={<Bot size={14} />} label="ResourceID" value={resourceId.slice(0,7)} color="text-teal-400" />
                        <StatItem icon={<Hash size={14} />} label="Words" value={`${summary.split(' ').length} words`} />
                        <StatItem icon={<Check size={14} />} label="Status" value="Completed" color="text-green-400" />
                     </div>
@@ -372,11 +372,6 @@ const SummaryPage = () => {
                      {/* Top Label */}
                      <div className="mb-8 pb-6 border-b border-white/5 flex items-center justify-between">
                         <span className="text-xs font-mono text-white/30 uppercase tracking-widest">AI Generated Summary</span>
-                        <div className="flex gap-1.5">
-                           <div className="w-2 h-2 rounded-full bg-red-500/20"></div>
-                           <div className="w-2 h-2 rounded-full bg-yellow-500/20"></div>
-                           <div className="w-2 h-2 rounded-full bg-green-500/20"></div>
-                        </div>
                      </div>
 
                      {/* Markdown Content */}
