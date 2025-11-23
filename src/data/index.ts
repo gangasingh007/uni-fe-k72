@@ -1,4 +1,4 @@
-export const resourcesData = {    
+export const resourcesData = {
     "data": [
         {
             "_id": "68b9a47aa40e9fb372a628ab",
@@ -381,6 +381,202 @@ export const resourcesData = {
                             "link": "https://docs.google.com/document/d/10lSAH-iOerYfOQkE03wo5H_qCp_SjoJx/edit?usp=sharing&ouid=101070998960209493258&rtpof=true&sd=true",
                             "type": "Document",
                             "createdAt": "2025-10-27T02:47:17.048Z"
+                        },
+                        {
+                            "_id": "68d0f5a75d2b820b99e62e1c",
+                            "title": "Introduction To SAD",
+                            "link": "https://docs.google.com/presentation/d/1NKM7aCWrdd0gHZPVOicK1N330s_Y27VI/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:07:19.370Z"
+                        },
+                        {
+                            "_id": "68d0f5c75d2b820b99e62e26",
+                            "title": "Elements and Type of Systems",
+                            "link": "https://docs.google.com/presentation/d/1NNnz-xM_GV3tDs_BKGgSlsuehSnc28ao/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:07:51.882Z"
+                        },
+                        {
+                            "_id": "68d0f5eb5d2b820b99e62e38",
+                            "title": "Man Made Information Systems",
+                            "link": "https://docs.google.com/presentation/d/1NTsb8-StK7nSwT0D5woEljOYUhoPiPDO/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:08:27.835Z"
+                        },
+                        {
+                            "_id": "68d0f64c5d2b820b99e62e42",
+                            "title": "Man Made Info Systems (Part-2)",
+                            "link": "https://docs.google.com/presentation/d/1NQrQlxorMuQGstbRpLHrGf82zRaXXy2-/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:10:04.910Z"
+                        },
+                        {
+                            "_id": "68d0f65d5d2b820b99e62e4c",
+                            "title": "System Development Life Cycle",
+                            "link": "https://docs.google.com/presentation/d/1NZwijZ_72U3bJGfNfexzLYpqciDqkzr9/edit?slide=id.p1#slide=id.p1",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:10:21.562Z"
+                        },
+                        {
+                            "_id": "68d0f6945d2b820b99e62e56",
+                            "title": "Role of an Analysts",
+                            "link": "https://docs.google.com/presentation/d/1NlKZrL2HoQGvFgUMX_YKFYwHuVpgm9C1/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:11:16.201Z"
+                        },
+                        {
+                            "_id": "68d0f6f85d2b820b99e62e68",
+                            "title": "System Planning and initial Investigation",
+                            "link": "https://docs.google.com/presentation/d/1O49jKgGw0OgF7OTHVmBtGsgo00oxCPSJ/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:12:56.950Z"
+                        },
+                        {
+                            "_id": "68d0f7125d2b820b99e62e72",
+                            "title": "Information Gathering",
+                            "link": "https://docs.google.com/presentation/d/1NEVILscaYsNybKlVE4Ifzzj9C0t7O7CD/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:13:22.355Z"
+                        },
+                        {
+                            "_id": "68d0f7305d2b820b99e62e7c",
+                            "title": "Feasibility Analysis",
+                            "link": "https://docs.google.com/presentation/d/1NA9cFKsXXXecQByJ1vew5PVJiGoccQ-b/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:13:52.052Z"
+                        },
+                        {
+                            "_id": "68d0f7655d2b820b99e62e86",
+                            "title": "Cost Benefit Analysis",
+                            "link": "https://docs.google.com/document/d/1MxUjyVR-lQUveA-XTG3tH6KekN94wBpw/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:14:45.189Z"
+                        },
+                        {
+                            "_id": "68d0f78e5d2b820b99e62e90",
+                            "title": "Cost Benefit Analysis - 2",
+                            "link": "https://docs.google.com/presentation/d/1N1Zi2K1KjQ2REdD7LbTRJ5lTJxQRp4e_/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-09-22T07:15:26.282Z"
+                        },
+                        {
+                            "_id": "6922f334fd92e2d053f2a63d",
+                            "title": "Intro to SAD",
+                            "link": "https://docs.google.com/presentation/d/1NKM7aCWrdd0gHZPVOicK1N330s_Y27VI/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:42:44.629Z"
+                        },
+                        {
+                            "_id": "6922f368fd92e2d053f2a644",
+                            "title": "Elemnts and Type of systems",
+                            "link": "https://docs.google.com/presentation/d/1NNnz-xM_GV3tDs_BKGgSlsuehSnc28ao/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:43:36.333Z"
+                        },
+                        {
+                            "_id": "6922f3a5fd92e2d053f2a64b",
+                            "title": "System Documentation",
+                            "link": "https://docs.google.com/presentation/d/1N89gMf-BwI0KvK03JM7HkZOrhCFl2bRV/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:44:37.772Z"
+                        },
+                        {
+                            "_id": "6922f3c5fd92e2d053f2a652",
+                            "title": "Principles of System Documentation",
+                            "link": "https://drive.google.com/file/d/1N6k-85XDvkI6V3DNrkpMoFfSpwCN9JZE/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:45:09.578Z"
+                        },
+                        {
+                            "_id": "6922f3ecfd92e2d053f2a659",
+                            "title": "Importance of System Documentation",
+                            "link": "https://drive.google.com/file/d/1NC-sNBf5B6ChzdlButYLbDOp-vM6SuXO/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:45:48.633Z"
+                        },
+                        {
+                            "_id": "6922f404fd92e2d053f2a660",
+                            "title": "SRS",
+                            "link": "https://docs.google.com/presentation/d/1Nw5VeLtJuvzP5lxDRygi01NF3O38wn1M/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:46:12.366Z"
+                        },
+                        {
+                            "_id": "6922f422fd92e2d053f2a667",
+                            "title": "System Chart Details",
+                            "link": "https://docs.google.com/presentation/d/1NoDaYqf317SlrcTTRYpnNG3zNud_CPym/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:46:42.691Z"
+                        },
+                        {
+                            "_id": "6922f438fd92e2d053f2a66e",
+                            "title": "System Design",
+                            "link": "https://docs.google.com/presentation/d/1O0JwJauYdb_xKlFS4rLs1S7-C2hlcP4i/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:47:04.615Z"
+                        },
+                        {
+                            "_id": "6922f448fd92e2d053f2a675",
+                            "title": "System Design Tools",
+                            "link": "https://docs.google.com/presentation/d/1O830kdo-YmSPI-0DMP0Z9vu5oVFg1qyY/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:47:20.793Z"
+                        },
+                        {
+                            "_id": "6922f47cfd92e2d053f2a67c",
+                            "title": "System Implementation",
+                            "link": "https://docs.google.com/presentation/d/1OAL47g6a-3Et113yQwCZmxTnI9i6hL9O/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:48:12.197Z"
+                        },
+                        {
+                            "_id": "6922f4e7fd92e2d053f2a68f",
+                            "title": "PIER and Maintenance",
+                            "link": "https://docs.google.com/presentation/d/1ODc64lkVUt3-0nNGngk2ezrUUFo7hO-1/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:49:59.308Z"
+                        },
+                        {
+                            "_id": "6922f4fefd92e2d053f2a696",
+                            "title": "System Testing",
+                            "link": "https://docs.google.com/presentation/d/1ONhD9N1W-5wwiC4JCoJXuqVJx4MiLOjQ/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:50:22.843Z"
+                        },
+                        {
+                            "_id": "6922f5d2fd92e2d053f2a69d",
+                            "title": "System Security and Threats",
+                            "link": "https://docs.google.com/presentation/d/1OPJ60tJ963B5VcLtBQNRr7GMh580C_55/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:53:54.785Z"
+                        },
+                        {
+                            "_id": "6922f650fd92e2d053f2a6a4",
+                            "title": "University Management System",
+                            "link": "https://docs.google.com/document/d/1D_xnuf32yEwnDIAawNEld-Qz9gSBttn4/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:56:00.989Z"
+                        },
+                        {
+                            "_id": "6922f67afd92e2d053f2a6ab",
+                            "title": "Health Management System",
+                            "link": "https://docs.google.com/presentation/d/1U403VZ417eTf1yZ0RQKYm271QnNHdc2j/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:56:42.560Z"
+                        },
+                        {
+                            "_id": "6922f690fd92e2d053f2a6b2",
+                            "title": "Library Management System",
+                            "link": "https://docs.google.com/presentation/d/1MGzSiwTvWBHBcVtz_aVkO8YKLWVhc3rZ/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:57:04.541Z"
+                        },
+                        {
+                            "_id": "6922f6aafd92e2d053f2a6b9",
+                            "title": "University Management System-1",
+                            "link": "https://docs.google.com/presentation/d/1a2mvv-RiPPabhHYaBE6Fe0q8eQmyYpGV/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T11:57:30.278Z"
                         }
                     ]
                 },
@@ -598,6 +794,55 @@ export const resourcesData = {
                             "link": "https://youtu.be/GBjVVTcFqsI",
                             "type": "Yt-Link",
                             "createdAt": "2025-09-24T09:00:14.005Z"
+                        },
+                        {
+                            "_id": "6922f7a8fd92e2d053f2a6c3",
+                            "title": "Week-3",
+                            "link": "https://drive.google.com/file/d/1F4rlsrCRyewwrhQd-iFZgcb1vZ5hci4D/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T12:01:44.333Z"
+                        },
+                        {
+                            "_id": "6922f7bcfd92e2d053f2a6ca",
+                            "title": "Week-4",
+                            "link": "https://drive.google.com/file/d/1SsKiCZD1P7QoX61_9NuTJfCxS0oq5zu5/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T12:02:04.486Z"
+                        },
+                        {
+                            "_id": "6922f856fd92e2d053f2a6d1",
+                            "title": "Week-3 Simplified",
+                            "link": "https://drive.google.com/file/d/1SsKiCZD1P7QoX61_9NuTJfCxS0oq5zu5/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T12:04:38.209Z"
+                        },
+                        {
+                            "_id": "6922f86ffd92e2d053f2a6d8",
+                            "title": "Week-4 Simplified",
+                            "link": "https://drive.google.com/file/d/1KnNmANGt3PDFMCRBPimq_1EZK8_wtLoV/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T12:05:03.092Z"
+                        },
+                        {
+                            "_id": "6922f91cfd92e2d053f2a6df",
+                            "title": "Week-5 Simplified",
+                            "link": "https://drive.google.com/file/d/1JBQO4jVzw-aPEDPcg56MVO2x90jS-mHb/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T12:07:56.967Z"
+                        },
+                        {
+                            "_id": "6922f934fd92e2d053f2a6e6",
+                            "title": "Week-6 Simplified",
+                            "link": "https://drive.google.com/file/d/1x9Pkf3GjX0aDaNjZU-Wt9iOGYbWYuw_k/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-23T12:08:20.007Z"
+                        },
+                        {
+                            "_id" : "69230fc167e159936a004088",
+                            "title" : "Week-7 Simplified",
+                            "link" : "https://drive.google.com/file/d/1E-oE75kyADx1v-VpEhlpA4dxt4Nz5ImJ/view?usp=drive_link",
+                            "type" : "Doument",
+                            "createdAt" : "2025-11-23T12:08:20.007Z"
                         }
                     ]
                 }
@@ -711,144 +956,6 @@ export const resourcesData = {
                             "link": "https://drive.google.com/file/d/11rZJykV6lwwDuAGPEwUfea6OtLwY8duj/view?usp=drive_link",
                             "type": "Document",
                             "createdAt": "2025-09-24T08:17:18.113Z"
-                        }
-                    ]
-                },
-                {
-                    "_id": "68c17186cb3b0dd6c35ef0f5",
-                    "title": "DAA",
-                    "subjectTeacher": "Er. Harshit Gupta",
-                    "resources": []
-                },
-                {
-                    "_id": "68c17209cb3b0dd6c35ef0fb",
-                    "title": "SAD",
-                    "subjectTeacher": "Dr. Satinder Kaur",
-                    "resources": [
-                        {
-                            "_id": "68d0f5a75d2b820b99e62e1c",
-                            "title": "Introduction To SAD",
-                            "link": "https://docs.google.com/presentation/d/1NKM7aCWrdd0gHZPVOicK1N330s_Y27VI/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:07:19.370Z"
-                        },
-                        {
-                            "_id": "68d0f5c75d2b820b99e62e26",
-                            "title": "Elements and Type of Systems",
-                            "link": "https://docs.google.com/presentation/d/1NNnz-xM_GV3tDs_BKGgSlsuehSnc28ao/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:07:51.882Z"
-                        },
-                        {
-                            "_id": "68d0f5eb5d2b820b99e62e38",
-                            "title": "Man Made Information Systems",
-                            "link": "https://docs.google.com/presentation/d/1NTsb8-StK7nSwT0D5woEljOYUhoPiPDO/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:08:27.835Z"
-                        },
-                        {
-                            "_id": "68d0f64c5d2b820b99e62e42",
-                            "title": "Man Made Info Systems (Part-2)",
-                            "link": "https://docs.google.com/presentation/d/1NQrQlxorMuQGstbRpLHrGf82zRaXXy2-/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:10:04.910Z"
-                        },
-                        {
-                            "_id": "68d0f65d5d2b820b99e62e4c",
-                            "title": "System Development Life Cycle",
-                            "link": "https://docs.google.com/presentation/d/1NZwijZ_72U3bJGfNfexzLYpqciDqkzr9/edit?slide=id.p1#slide=id.p1",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:10:21.562Z"
-                        },
-                        {
-                            "_id": "68d0f6945d2b820b99e62e56",
-                            "title": "Role of an Analysts",
-                            "link": "https://docs.google.com/presentation/d/1NlKZrL2HoQGvFgUMX_YKFYwHuVpgm9C1/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:11:16.201Z"
-                        },
-                        {
-                            "_id": "68d0f6f85d2b820b99e62e68",
-                            "title": "System Planning and initial Investigation",
-                            "link": "https://docs.google.com/presentation/d/1O49jKgGw0OgF7OTHVmBtGsgo00oxCPSJ/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:12:56.950Z"
-                        },
-                        {
-                            "_id": "68d0f7125d2b820b99e62e72",
-                            "title": "Information Gathering",
-                            "link": "https://docs.google.com/presentation/d/1NEVILscaYsNybKlVE4Ifzzj9C0t7O7CD/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:13:22.355Z"
-                        },
-                        {
-                            "_id": "68d0f7305d2b820b99e62e7c",
-                            "title": "Feasibility Analysis",
-                            "link": "https://docs.google.com/presentation/d/1NA9cFKsXXXecQByJ1vew5PVJiGoccQ-b/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:13:52.052Z"
-                        },
-                        {
-                            "_id": "68d0f7655d2b820b99e62e86",
-                            "title": "Cost Benefit Analysis",
-                            "link": "https://docs.google.com/document/d/1MxUjyVR-lQUveA-XTG3tH6KekN94wBpw/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:14:45.189Z"
-                        },
-                        {
-                            "_id": "68d0f78e5d2b820b99e62e90",
-                            "title": "Cost Benefit Analysis - 2",
-                            "link": "https://docs.google.com/presentation/d/1N1Zi2K1KjQ2REdD7LbTRJ5lTJxQRp4e_/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:15:26.282Z"
-                        }
-                    ]
-                },
-                {
-                    "_id": "68c1721dcb3b0dd6c35ef101",
-                    "title": "FLAT",
-                    "subjectTeacher": "Er. Sunit",
-                    "resources": []
-                },
-                {
-                    "_id": "68c173dfcb3b0dd6c35ef13d",
-                    "title": "MOOC",
-                    "subjectTeacher": "-",
-                    "resources": [
-                        {
-                            "_id": "68d0fdba5d2b820b99e62f80",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 1",
-                            "link": "https://www.youtube.com/watch?v=_VVXOpZODtg",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-22T07:41:46.853Z"
-                        },
-                        {
-                            "_id": "68d0fdd05d2b820b99e62f92",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 2",
-                            "link": "https://www.youtube.com/watch?v=BJQHE_JZ_hg",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-22T07:42:08.979Z"
-                        },
-                        {
-                            "_id": "68d0fde15d2b820b99e62f9c",
-                            "title": "Week-1 part-1",
-                            "link": "https://drive.google.com/file/d/1jzMJ6LO1FdixbFQh0bboZwPi8IHk7q2G/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:42:25.525Z"
-                        },
-                        {
-                            "_id": "68d0fdee5d2b820b99e62fa6",
-                            "title": "Week-1 Part-2",
-                            "link": "https://drive.google.com/file/d/1jzMJ6LO1FdixbFQh0bboZwPi8IHk7q2G/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:42:38.955Z"
-                        },
-                        {
-                            "_id": "68d0fdfa5d2b820b99e62fb0",
-                            "title": "Week-2",
-                            "link": "https://drive.google.com/file/d/1vI_sqsXLCE-6jxRPEwRXPewhXeczIyVU/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-22T07:42:50.756Z"
                         }
                     ]
                 },
