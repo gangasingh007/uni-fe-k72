@@ -11,62 +11,11 @@ import {
 } from "lucide-react";
 import ApiResponseViewer from "../components/ApiResponseViewer";
 import DocumentPreview from "../components/DocumentPreview";
-
-// --- Utility Components ---
-
-const BackgroundGrid = () => (
-  <div className="fixed inset-0 z-0 pointer-events-none select-none">
-    {/* Subtle Grid Pattern */}
-    <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:40px_40px]" />
-    {/* Radial Gradient for depth */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_0%_0%,#115e5915,transparent)]" />
-    <div className="absolute inset-0 bg-black/90" /> 
-  </div>
-);
+import BackgroundGrid from "@/components/BackgroundGrid";
+import LoadingAnimation from "./LoadingAnimation";
+import StatItem from "@/components/StatIem";
 
 const isValidMongoId = (id: string | null) => id && /^[0-9a-fA-F]{24}$/.test(id);
-
-// --- Loading State ---
-const LoadingAnimation = ({ progress }: { progress: number }) => {
-  return (
-    <motion.div 
-      className="flex flex-col items-center justify-center min-h-[60vh] z-10 relative"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
-      <div className="relative w-24 h-24 mb-8">
-         {/* Outer Glow */}
-         <motion.div
-           className="absolute inset-0 rounded-full bg-teal-500/20 blur-xl"
-           animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
-           transition={{ duration: 2, repeat: Infinity }}
-         />
-         {/* Spinner Rings */}
-         <motion.div
-           className="absolute inset-0 border-2 border-white/5 rounded-full"
-         />
-         <motion.div
-           className="absolute inset-0 border-2 border-teal-400 rounded-full border-t-transparent border-l-transparent"
-           animate={{ rotate: 360 }}
-           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-         />
-      </div>
-
-      <div className="text-center space-y-2">
-        <h3 className="text-xl font-medium text-white tracking-tight">
-          Synthesizing Knowledge
-        </h3>
-        <div className="flex items-center justify-center gap-2 text-sm text-teal-400/80 font-mono">
-          <span>{Math.round(progress)}% Processed</span>
-          <span className="inline-block w-1.5 h-1.5 bg-current rounded-full animate-pulse" />
-        </div>
-        <p className="text-white/30 text-xs max-w-xs mx-auto mt-4 leading-relaxed">
-          AI is analyzing document structure and extracting key concepts...
-        </p>
-      </div>
-    </motion.div>
-  );
-};
 
 // @ts-ignore
 const Toast = ({ message, type = "success", onClose }) => {
@@ -94,7 +43,7 @@ const Toast = ({ message, type = "success", onClose }) => {
   );
 };
 
-// --- Main Component ---
+
 const SummaryPage = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -114,7 +63,6 @@ const SummaryPage = () => {
   const [isDownloading, setIsDownloading] = useState(false);
   const [toast, setToast] = useState<any>(null);
 
-  // --- Logic: Progress Simulation ---
   useEffect(() => {
     if (loading) {
       const interval = setInterval(() => {
@@ -144,11 +92,12 @@ const SummaryPage = () => {
     const controller = new AbortController();
 
     const fetchSummary = async () => {
+      await new Promise(res=>setTimeout(res,3000))
       setLoading(true);
       setError("");
       try {
         const response = await axios.get(
-          `https://backend-uni-xb3p.onrender.com/api/v1/resource/gemini-summarize/${classId}/${subjectId}/${resourceId}`,
+          `https://backend-uni-xb3p.onrender.com/api/v1/resource/gemini-summarize/${resourceId}`,
           { signal: controller.signal }
         );
 
@@ -398,7 +347,6 @@ const SummaryPage = () => {
           )}
        </main>
 
-       {/* Document Preview Modal */}
        <DocumentPreview
          isOpen={showPreview} 
          onClose={() => setShowPreview(false)} 
@@ -407,18 +355,5 @@ const SummaryPage = () => {
     </div>
   );
 };
-
-// --- Helper Component for Stats ---
-const StatItem = ({ icon, label, value, color = "text-white" }: { icon: React.ReactNode, label: string, value: string, color?: string }) => (
-  <div className="flex items-center gap-3">
-    <div className="p-2 bg-white/5 rounded-lg text-white/30">
-      {icon}
-    </div>
-    <div>
-      <p className="text-[10px] uppercase tracking-wider text-white/30 font-bold leading-tight mb-0.5">{label}</p>
-      <p className={`text-sm font-mono font-medium ${color}`}>{value}</p>
-    </div>
-  </div>
-);
 
 export default SummaryPage;

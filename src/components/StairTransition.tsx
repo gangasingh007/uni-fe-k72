@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 const StairTransition = () => {
   const stairsRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
-  const STAIR_COUNT = 7;
+  const STAIR_COUNT = 5;
   const timelineRef = useRef<gsap.core.Timeline | null>(null);
   const isInitialMount = useRef(true);
   const previousPathname = useRef<string>(location.pathname);
@@ -14,13 +14,12 @@ const StairTransition = () => {
     const stairs = stairsRef.current?.children;
     if (!stairs) return;
 
-    // Kill any existing animation
+
     if (timelineRef.current) {
       timelineRef.current.kill();
     }
 
     if (isInitialMount.current) {
-      // On initial mount, start with stairs covering the screen, then open
       gsap.set(stairs, { yPercent: 0 });
       
       const tl = gsap.timeline({
@@ -54,7 +53,6 @@ const StairTransition = () => {
         },
       });
 
-      // Then open stairs to reveal new page
       const openTL = gsap.timeline({
         delay: 0.15,
       });
@@ -80,7 +78,7 @@ const StairTransition = () => {
         timelineRef.current.kill();
       }
     };
-  }, [location.pathname]); // Trigger on route change
+  }, [location.pathname]);
 
   return (
     <div

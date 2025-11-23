@@ -6,8 +6,6 @@ import {
   Lock, LayoutGrid
 } from 'lucide-react';
 
-// --- Styled Components ---
-
 const BackgroundGrid = () => (
   <div className="fixed inset-0 z-0 pointer-events-none select-none">
     <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:40px_40px]" />
