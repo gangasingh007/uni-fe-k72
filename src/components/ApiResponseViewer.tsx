@@ -26,8 +26,8 @@ const ApiResponseViewer = ({ text }: { text: string }) => {
         <div className="my-8  overflow-hidden border border-white/10 bg-[#0D0D0D] shadow-2xl group">
            {/* Mac-like Terminal Header */}
            <div className="flex justify-between items-center px-4 py-3 bg-white/5 border-b border-white/5">
-              <div className="flex items-center gap-2">
-                 <div className="flex gap-1.5 text-white/20">
+              <div className="flex items-center gap-0.5">
+                 <div className="flex gap-1 text-white/20 text-xs">
                     {`>_`}
                  </div>
                  <span className="ml-3 text-xs text-white/30 font-mono lowercase">
