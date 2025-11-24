@@ -843,7 +843,14 @@ export const resourcesData = {
                             "link" : "https://drive.google.com/file/d/1E-oE75kyADx1v-VpEhlpA4dxt4Nz5ImJ/view?usp=drive_link",
                             "type" : "Doument",
                             "createdAt" : "2025-11-23T12:08:20.007Z"
-                        }
+                        },
+                        {
+                            "_id" : "69241c0df7dad03dfe008e6d",
+                            "title" : "Week-8 Simplified",
+                            "link" : "https://drive.google.com/file/d/1dgsWPczHSkfEhOkjeupQ120nuTR_lqNU/view?usp=drive_linkX",
+                            "type" : "Doument",
+                            "createdAt" : "2025-11-23T12:08:20.007Z"
+                        }, 
                     ]
                 }
             ]
