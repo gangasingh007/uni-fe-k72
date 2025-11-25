@@ -40,13 +40,6 @@ export const resourcesData = {
                             "createdAt": "2025-09-26T08:43:22.164Z"
                         },
                         {
-                            "_id": "68dec4b391e76e407174351d",
-                            "title": "Sec - B Complete Notes",
-                            "link": "https://drive.google.com/file/d/1wlJJJc-dE8JWZ2pO3WqEltpT3fqM2iPR/view?usp=drivesdk",
-                            "type": "Document",
-                            "createdAt": "2025-10-02T18:30:11.436Z"
-                        },
-                        {
                             "_id": "69183ed244dccb50d948d7e4",
                             "title": "SQL queries and BCNF",
                             "link": "https://docs.google.com/presentation/d/1LM1HJ9qS6J9cRN2XPxpB_2b0FmT136Zn/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
