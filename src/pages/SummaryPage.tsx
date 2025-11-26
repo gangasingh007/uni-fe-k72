@@ -102,7 +102,8 @@ const SummaryPage = () => {
     }
 
     // Check for pre-made summary first (for FLAT subject notes)
-    if (resourceId && hasPreMadeSummary(resourceId)) {
+    // @ts-ignore
+    if (resourceId && hasPreMadeSummary(resourceId )) {
       const preMadeSummary = getPreMadeSummary(resourceId);
       if (preMadeSummary) {
         setLoading(true);
