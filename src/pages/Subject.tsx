@@ -75,7 +75,7 @@ const SubjectPage = () => {
       const firstClass = classResources[0];
       setSelectedClass(firstClass);
       if (firstClass.subject.length > 0) {
-        setSelectedSubject(firstClass.subject[0]);
+        setSelectedSubject(firstClass.subject[4]);
       }
     }
   }, [classResources]);
