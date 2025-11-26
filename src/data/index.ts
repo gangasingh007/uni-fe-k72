@@ -586,6 +586,20 @@ export const resourcesData = {
                             "createdAt": "2025-09-07T17:36:38.594Z"
                         },
                         {
+                            "_id": "68d3bcb1abbab983f3737b7d",
+                            "title": "FLAT - One shot",
+                            "link": "https://youtu.be/9kuynHcM3UA?si=GPBSoh6aZ8pdHsqm",
+                            "type": "Yt-Link",
+                            "createdAt": "2025-09-24T09:41:05.789Z"
+                        },
+                        {
+                            "_id": "68d5006677399ca554370460",
+                            "title": "Flat-Custom Playlist",
+                            "link": "https://www.youtube.com/playlist?list=PLAZec13sXdjphfR7Fmy8ionp26BmEQzCz",
+                            "type": "Yt-Link",
+                            "createdAt": "2025-09-25T08:42:14.333Z"
+                        },
+                        {
                             "_id": "68bdc2b8a0c778edac25d113",
                             "title": "Flat-Playlist-2",
                             "link": "https://youtube.com/playlist?list=PLxCzCOWd7aiFM9Lj5G9G_76adtyb4ef7i&si=NS3Qc3P4Ih9PQ-DY",
@@ -599,10 +613,18 @@ export const resourcesData = {
                             "type": "Document",
                             "createdAt": "2025-09-15T12:35:00.776Z"
                         },
+                        
+                        {
+                            "_id": "68d3d95693b34da2cacd2431",
+                            "title": "Flat-2",
+                            "link": "https://drive.google.com/file/d/1PfsBA46HmQvfEEUrcARJ3X3EepZXJMTG/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-09-24T11:43:18.481Z"
+                        },
                         {
                             "_id": "68c8082247b63605991952d3",
                             "title": "Flat-3",
-                            "link": "https://drive.google.com/file/d/1P53Z1jaL6ci96w5MKGHlBqXxxcaVZZ76/view?usp=drive_link",
+                            "link": "https://drive.google.com/file/d/182OJATfwgYofXtkUZh11GKzwOpOH8mCQ/view?usp=sharing",
                             "type": "Document",
                             "createdAt": "2025-09-15T12:35:46.327Z"
                         },
@@ -655,197 +677,46 @@ export const resourcesData = {
                             "type": "Document",
                             "createdAt": "2025-09-24T08:09:20.020Z"
                         },
+                       
+                        
                         {
-                            "_id": "68d3bcb1abbab983f3737b7d",
-                            "title": "FLAT - One shot",
-                            "link": "https://youtu.be/9kuynHcM3UA?si=GPBSoh6aZ8pdHsqm",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T09:41:05.789Z"
-                        },
-                        {
-                            "_id": "68d3d95693b34da2cacd2431",
-                            "title": "Flat-2",
-                            "link": "https://drive.google.com/file/d/1PfsBA46HmQvfEEUrcARJ3X3EepZXJMTG/view?usp=drive_link",
+                            "_id": "6926f03058b12d3aac59b6ba",
+                            "title": "Flat-11",
+                            "link": "https://drive.google.com/file/d/1Xi4_Ry-K3Uf5_50Ne2MQwvXbwXWzx24Y/view?usp=drive_link",
                             "type": "Document",
-                            "createdAt": "2025-09-24T11:43:18.481Z"
+                            "createdAt": "2025-11-26T12:18:56.515Z"
                         },
                         {
-                            "_id": "68d5006677399ca554370460",
-                            "title": "Flat-Custom Playlist",
-                            "link": "https://www.youtube.com/playlist?list=PLAZec13sXdjphfR7Fmy8ionp26BmEQzCz",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-25T08:42:14.333Z"
+                            "_id": "6926f04558b12d3aac59b6c1",
+                            "title": "Flat-12",
+                            "link": "https://drive.google.com/file/d/1-C3ats9MH0jVOdIgSuBbaXWsqnoDyH8I/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-26T12:19:17.067Z"
+                        },
+                        {
+                            "_id": "6926f05f58b12d3aac59b6c8",
+                            "title": "Flat-13",
+                            "link": "https://drive.google.com/file/d/1-JVWqLOk14viwW0Vc7i1WGG3hIVL3RzF/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-26T12:19:43.090Z"
+                        },
+                        {
+                            "_id": "6926f09c58b12d3aac59b6cf",
+                            "title": "Greiback normal form",
+                            "link": "https://drive.google.com/file/d/1YIDbH4rD1uXeom19ttd8qYK8zxC_JwhJ/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-26T12:20:44.576Z"
+                        },
+                        {
+                            "_id": "6926f22d58b12d3aac59b6d6",
+                            "title": "Practice Questions",
+                            "link": "https://drive.google.com/file/d/1YiuDzUY-P7xD-LMVJy0mMP0mapmbXf9w/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-11-26T12:27:25.267Z"
                         }
                     ]
                 },
-                {
-                    "_id": "68beffe0330ac990d24566dc",
-                    "title": "MOOC",
-                    "subjectTeacher": "-",
-                    "resources": [
-                        {
-                            "_id": "68d01d9d68e7125413981dd7",
-                            "title": "Week-1 part-1",
-                            "link": "https://drive.google.com/file/d/1jzMJ6LO1FdixbFQh0bboZwPi8IHk7q2G/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-21T15:45:33.253Z"
-                        },
-                        {
-                            "_id": "68d01db268e7125413981de1",
-                            "title": "Week-1 Part-2",
-                            "link": "https://drive.google.com/file/d/1jzMJ6LO1FdixbFQh0bboZwPi8IHk7q2G/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-21T15:45:54.970Z"
-                        },
-                        {
-                            "_id": "68d01dc368e7125413981deb",
-                            "title": "Week-2",
-                            "link": "https://drive.google.com/file/d/1vI_sqsXLCE-6jxRPEwRXPewhXeczIyVU/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-21T15:46:11.882Z"
-                        },
-                        {
-                            "_id": "68d01de168e7125413981df5",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 1",
-                            "link": "https://www.youtube.com/watch?v=_VVXOpZODtg",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-21T15:46:41.462Z"
-                        },
-                        {
-                            "_id": "68d01df168e7125413981dff",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 2",
-                            "link": "https://www.youtube.com/watch?v=BJQHE_JZ_hg",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-21T15:46:57.202Z"
-                        },
-                        {
-                            "_id": "68d3b1d981a1f08520a30f47",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 3",
-                            "link": "https://youtu.be/8SLLrYVv40k",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:54:49.126Z"
-                        },
-                        {
-                            "_id": "68d3b22381a1f08520a30f51",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 4",
-                            "link": "https://youtu.be/L66rOteYm14",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:56:03.978Z"
-                        },
-                        {
-                            "_id": "68d3b23f81a1f08520a30f5b",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 5",
-                            "link": "https://youtu.be/YKC1waZq4eU",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:56:31.692Z"
-                        },
-                        {
-                            "_id": "68d3b25681a1f08520a30f65",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 6",
-                            "link": "https://youtu.be/Kli39Wr-1zc",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:56:54.795Z"
-                        },
-                        {
-                            "_id": "68d3b26d81a1f08520a30f6f",
-                            "title": "Basics of Information Security, Principles (PAIN), RAID - Part 7",
-                            "link": "https://youtu.be/nZIR9BFg74Q",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:57:17.977Z"
-                        },
-                        {
-                            "_id": "68d3b29c81a1f08520a30f79",
-                            "title": "OS Security Features And Antivirus - Part 1",
-                            "link": "https://www.youtube.com/watch?v=GGjqoASU6wI",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:58:04.859Z"
-                        },
-                        {
-                            "_id": "68d3b2cb81a1f08520a30f83",
-                            "title": "OS Security Features And Antivirus - Part 2",
-                            "link": "https://www.youtube.com/watch?v=ZbD7Ac0255w",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:58:51.979Z"
-                        },
-                        {
-                            "_id": "68d3b2e581a1f08520a30f8d",
-                            "title": "OS Security Features And Antivirus - Part 3",
-                            "link": "https://www.youtube.com/watch?v=mRLdZLh4zaU",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:59:17.530Z"
-                        },
-                        {
-                            "_id": "68d3b30181a1f08520a30f97",
-                            "title": "OS Security Features And Antivirus - Part 4",
-                            "link": "https://youtu.be/RNMBs0ZaVCE",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T08:59:45.394Z"
-                        },
-                        {
-                            "_id": "68d3b31e81a1f08520a30fa1",
-                            "title": "OS Security Features And Antivirus - Part 5",
-                            "link": "https://youtu.be/GBjVVTcFqsI",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-24T09:00:14.005Z"
-                        },
-                        {
-                            "_id": "6922f7a8fd92e2d053f2a6c3",
-                            "title": "Week-3",
-                            "link": "https://drive.google.com/file/d/1F4rlsrCRyewwrhQd-iFZgcb1vZ5hci4D/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T12:01:44.333Z"
-                        },
-                        {
-                            "_id": "6922f7bcfd92e2d053f2a6ca",
-                            "title": "Week-4",
-                            "link": "https://drive.google.com/file/d/1SsKiCZD1P7QoX61_9NuTJfCxS0oq5zu5/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T12:02:04.486Z"
-                        },
-                        {
-                            "_id": "6922f856fd92e2d053f2a6d1",
-                            "title": "Week-3 Simplified",
-                            "link": "https://drive.google.com/file/d/1SsKiCZD1P7QoX61_9NuTJfCxS0oq5zu5/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T12:04:38.209Z"
-                        },
-                        {
-                            "_id": "6922f86ffd92e2d053f2a6d8",
-                            "title": "Week-4 Simplified",
-                            "link": "https://drive.google.com/file/d/1KnNmANGt3PDFMCRBPimq_1EZK8_wtLoV/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T12:05:03.092Z"
-                        },
-                        {
-                            "_id": "6922f91cfd92e2d053f2a6df",
-                            "title": "Week-5 Simplified",
-                            "link": "https://drive.google.com/file/d/1JBQO4jVzw-aPEDPcg56MVO2x90jS-mHb/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T12:07:56.967Z"
-                        },
-                        {
-                            "_id": "6922f934fd92e2d053f2a6e6",
-                            "title": "Week-6 Simplified",
-                            "link": "https://drive.google.com/file/d/1x9Pkf3GjX0aDaNjZU-Wt9iOGYbWYuw_k/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T12:08:20.007Z"
-                        },
-                        {
-                            "_id" : "69230fc167e159936a004088",
-                            "title" : "Week-7 Simplified",
-                            "link" : "https://drive.google.com/file/d/1E-oE75kyADx1v-VpEhlpA4dxt4Nz5ImJ/view?usp=drive_link",
-                            "type" : "Doument",
-                            "createdAt" : "2025-11-23T12:08:20.007Z"
-                        },
-                        {
-                            "_id" : "69241c0df7dad03dfe008e6d",
-                            "title" : "Week-8 Simplified",
-                            "link" : "https://drive.google.com/file/d/1dgsWPczHSkfEhOkjeupQ120nuTR_lqNU/view?usp=drive_linkX",
-                            "type" : "Doument",
-                            "createdAt" : "2025-11-23T12:08:20.007Z"
-                        }, 
-                    ]
-                }
+                
             ]
         },
         {

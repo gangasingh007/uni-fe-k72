@@ -14,6 +14,7 @@ import DocumentPreview from "../components/DocumentPreview";
 import BackgroundGrid from "@/components/BackgroundGrid";
 import LoadingAnimation from "./LoadingAnimation";
 import StatItem from "@/components/StatIem";
+import { hasPreMadeSummary, getPreMadeSummary } from "@/data/flatSummaries";
 
 
 const isValidMongoId = (id: string | null) => id && /^[0-9a-fA-F]{24}$/.test(id);
@@ -92,7 +93,7 @@ const SummaryPage = () => {
   }, [linkFromUrl]);
 
 
-  // --- Logic: API Fetch ---
+  // --- Logic: API Fetch or Pre-made Summary ---
   useEffect(() => {
     if (!isValidMongoId(resourceId) || !isValidMongoId(classId) || !isValidMongoId(subjectId)) {
       setError("Invalid Request Parameters.");
@@ -100,9 +101,22 @@ const SummaryPage = () => {
       return;
     }
 
+    // Check for pre-made summary first (for FLAT subject notes)
+    if (resourceId && hasPreMadeSummary(resourceId)) {
+      const preMadeSummary = getPreMadeSummary(resourceId);
+      if (preMadeSummary) {
+        setLoading(true);
+        setTimeout(() => {
+          setSummary(preMadeSummary.summary);
+          setResourceTitle(preMadeSummary.title);
+          setLoading(false);
+          setToast({ message: "Summary Loaded Successfully", type: "success" });
+        }, 7000); // Artificial delay of 7 seconds
+        return;
+      }
+    }
 
     const controller = new AbortController();
-
 
     const fetchSummary = async () => {
       setLoading(true);
@@ -112,7 +126,6 @@ const SummaryPage = () => {
           `https://backend-uni-xb3p.onrender.com/api/v1/resource/gemini-summarize/${classId}/${subjectId}/${resourceId}`,
           { signal: controller.signal }
         );
-
 
         setSummary(response.data.summary);
         if (response.data.resource?.title) setResourceTitle(response.data.resource.title);
@@ -126,7 +139,6 @@ const SummaryPage = () => {
         if (!controller.signal.aborted) setLoading(false);
       }
     };
-
 
     fetchSummary();
     return () => controller.abort();
@@ -243,7 +255,7 @@ const SummaryPage = () => {
                 >
                    <AlertTriangle size={18} className="text-white/50" />
                    <p className="text-sm text-white/50">
-                      Optimized only for text-based documents. Handwritten and scanned docs are not available yet.
+                      Optimized only for text-based documents. Handwritten and scanned docs may not be available yet.
                    </p>
                 </motion.div>
              </div>
