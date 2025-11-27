@@ -92,8 +92,6 @@ const SummaryPage = () => {
     if (linkFromUrl) setResourceLink(decodeURIComponent(linkFromUrl));
   }, [linkFromUrl]);
 
-
-  // --- Logic: API Fetch or Pre-made Summary ---
   useEffect(() => {
     if (!isValidMongoId(resourceId) || !isValidMongoId(classId) || !isValidMongoId(subjectId)) {
       setError("Invalid Request Parameters.");
@@ -112,7 +110,7 @@ const SummaryPage = () => {
           setResourceTitle(preMadeSummary.title);
           setLoading(false);
           setToast({ message: "Summary Loaded Successfully", type: "success" });
-        }, 7000); // Artificial delay of 7 seconds
+        }, 7000); 
         return;
       }
     }
@@ -124,7 +122,7 @@ const SummaryPage = () => {
       setError("");
       try {
         const response = await axios.get(
-          `https://backend-uni-xb3p.onrender.com/api/v1/resource/gemini-summarize/${classId}/${subjectId}/${resourceId}`,
+          `${import.meta.env.VITE_API_URL}/api/v1/resource/gemini-summarize/${classId}/${subjectId}/${resourceId}`,
           { signal: controller.signal }
         );
 
