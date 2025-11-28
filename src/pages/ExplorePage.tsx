@@ -273,7 +273,7 @@ const ExplorePage = () => {
                            icon={<BrainCircuit size={28} />}
                            title="AI Engine"
                            subTitle="Intelligence & Analysis"
-                           techs={["Gemini 1.5 Pro", "API SDK"]}
+                           techs={["API SDK"]}
                            color="purple"
                            delay={0.4}
                         />

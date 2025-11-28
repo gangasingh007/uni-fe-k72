@@ -50,7 +50,7 @@ const SubjectPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  // --- Data Fetching ---
+ 
   useEffect(() => {
     const fetchResources = async () => {
       try {
@@ -69,7 +69,7 @@ const SubjectPage = () => {
     fetchResources();
   }, []);
 
-  // Auto-select first class and subject on load
+  
   useEffect(() => {
     if (classResources.length > 0 && !selectedClass) {
       const firstClass = classResources[0];
