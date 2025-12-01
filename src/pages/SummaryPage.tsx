@@ -1,20 +1,19 @@
-import React, { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { jsPDF } from "jspdf";
 import { 
   Loader2, AlertTriangle, ArrowLeft, FileText, 
-  Sparkles, Check, Copy, Download,
-  Zap, ExternalLink, Calendar, Hash, Bot, ChevronRight,
-  Quote, ChevronLeft, PanelLeftClose, PanelLeft
+  Check, Copy, Download,
+  ExternalLink, Calendar, Hash, Bot,
+  PanelLeftClose, PanelLeft
 } from "lucide-react";
 import ApiResponseViewer from "../components/ApiResponseViewer";
 import DocumentPreview from "../components/DocumentPreview";
 import BackgroundGrid from "@/components/BackgroundGrid";
 import LoadingAnimation from "./LoadingAnimation";
 import StatItem from "@/components/StatIem";
-import { hasPreMadeSummary, getPreMadeSummary } from "@/data/flatSummaries";
 
 
 const isValidMongoId = (id: string | null) => id && /^[0-9a-fA-F]{24}$/.test(id);
@@ -98,21 +97,6 @@ const SummaryPage = () => {
       setLoading(false);
       return;
     }
-    // @ts-ignore
-    if (resourceId && hasPreMadeSummary(resourceId )) {
-      const preMadeSummary = getPreMadeSummary(resourceId);
-      if (preMadeSummary) {
-        setLoading(true);
-        setTimeout(() => {
-          setSummary(preMadeSummary.summary);
-          setResourceTitle(preMadeSummary.title);
-          setLoading(false);
-          setToast({ message: "Summary Loaded Successfully", type: "success" });
-        }, 7000); 
-        return;
-      }
-    }
-
     const controller = new AbortController();
 
     const fetchSummary = async () => {
@@ -141,8 +125,6 @@ const SummaryPage = () => {
     return () => controller.abort();
   }, [resourceId, classId, subjectId]);
 
-
-  // --- Logic: Handlers ---
   const handleCopy = useCallback(() => {
     navigator.clipboard.writeText(summary);
     setToast({ message: "Content copied to clipboard", type: "success" });
@@ -159,8 +141,7 @@ const SummaryPage = () => {
       const pageHeight = doc.internal.pageSize.getHeight();
       const margin = 20;
       const maxWidth = pageWidth - (margin * 2);
-      
-      // Add a stylish header to PDF
+
       doc.setFillColor(15, 23, 42); // Dark Slate
       doc.rect(0, 0, pageWidth, 40, "F");
       
@@ -180,7 +161,6 @@ const SummaryPage = () => {
       const titleText = resourceTitle || "Resource Summary";
       doc.text(`Source: ${titleText}`, margin, 55);
       
-      // Start position for content
       let yPosition = 70;
       const lineHeight = 7;
       const bottomMargin = 20;
@@ -189,15 +169,13 @@ const SummaryPage = () => {
       doc.setFont("helvetica", "normal");
       doc.setFontSize(11);
       
-      // Split text into lines that fit the page width
       const splitText = doc.splitTextToSize(summary, maxWidth);
-      
-      // Add text line by line, creating new pages when needed
+    
       splitText.forEach((line: string) => {
-        // Check if we need a new page
+        
         if (yPosition + lineHeight > maxY) {
           doc.addPage();
-          yPosition = margin; // Reset to top of new page
+          yPosition = margin;
         }
         
         doc.text(line, margin, yPosition);
@@ -213,8 +191,6 @@ const SummaryPage = () => {
     }
   }, [summary, resourceTitle]);
 
-
-  // --- Render ---
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-teal-500/30 flex flex-col">
        <BackgroundGrid />
@@ -238,7 +214,6 @@ const SummaryPage = () => {
            </div>
          </div>
        </header>
-
 
        {/* Main Content Area */}
        <main className="relative z-10 flex-1 pt-28 pb-20 px-4 sm:px-6 w-full max-w-[1600px] mx-auto">
@@ -292,10 +267,6 @@ const SummaryPage = () => {
                      {/* Title Card */}
                      <div className="space-y-6">
                         <div className="space-y-2">
-                           <div className="text-teal-500 text-xs font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
-                              <Quote size={12} className="rotate-180" />
-                              Source Material
-                           </div>
                            <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
                              {resourceTitle || "Untitled Document"}
                            </h1>
@@ -359,7 +330,7 @@ const SummaryPage = () => {
 
 
                {/* RIGHT COLUMN: Scrollable Summary Content */}
-               <div className="relative min-h-[500px]">
+               <div className="mt-2 relative min-h-[500px]">
                   {/* Toggle Button */}
                   <motion.button
                     onClick={() => setIsSidebarVisible(!isSidebarVisible)}

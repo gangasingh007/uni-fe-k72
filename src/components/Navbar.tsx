@@ -4,13 +4,6 @@ import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
 
-const navLinks = [
-  { name: 'Syllabus', href: '#syllabus' },
-  { name: 'Results', href: '#results' },
-  { name: 'Jobs', href: '#jobs' },
-  { name: 'Mentorship', href: '#mentorship' },
-];
-
 const menuItems = [
   {
     text: 'Home',

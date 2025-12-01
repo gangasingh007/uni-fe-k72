@@ -2,7 +2,6 @@ import { Resource } from "@/pages/Subject";
 import { FileText, Sparkles, Youtube } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-// --- Resource Card Component (Design & Animation Preserved) ---
 interface ResourceCardProps {
     resource: Resource;
     classId: string;
@@ -64,7 +63,7 @@ const ResourceCard = ({ resource, classId, subjectId }: ResourceCardProps) => {
               {!isVideo && (
                 <button
                   onClick={handleSummarize}
-                  className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75 flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-teal-400"
+                  className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75 flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-md hover:bg-teal-400"
                 >
                   <Sparkles className="w-3 h-3" />
                   Summary

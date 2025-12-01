@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { 
   Server, Database, BrainCircuit, Globe, 
-  Zap, Layers, ArrowRight, Cpu, Network,
-  Lock, LayoutGrid
+  Network,
+  LayoutGrid
 } from 'lucide-react';
 
 const BackgroundGrid = () => (
@@ -42,8 +42,6 @@ const TechPill = ({ children }: { children: React.ReactNode }) => (
     {children}
   </span>
 );
-
-// --- Flowchart Nodes ---
 
 const NodeCard = ({ icon, title, subTitle, techs, color = "teal", delay = 0 }: any) => {
   const colorStyles: Record<string, string> = {
@@ -108,7 +106,6 @@ const NodeCard = ({ icon, title, subTitle, techs, color = "teal", delay = 0 }: a
   );
 };
 
-// --- Horizontal Connectors ---
 
 const HorizontalPath = ({ width = "w-24", delay = 0 }) => (
   <div className={`relative h-0.5 ${width} bg-gradient-to-r from-white/5 via-white/20 to-white/5 self-center mx-6`}>

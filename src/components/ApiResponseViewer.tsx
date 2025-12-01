@@ -7,8 +7,6 @@ import { Copy, Check, Terminal, Info } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ApiResponseViewer = ({ text }: { text: string }) => {
-
-  // --- Custom Components ---
   
   const CustomCode = ({ inline, className, children, ...props }: any) => {
     const match = /language-(\w+)/.exec(className || '');
@@ -60,7 +58,7 @@ const ApiResponseViewer = ({ text }: { text: string }) => {
         </div>
       );
     }
-    // Inline Code Styling (Pill shape)
+
     return (
       <code className="bg-white/10 text-teal-300 px-1.5 py-0.5 rounded-md text-[0.9em] font-mono border border-white/5" {...props}>
         {children}
@@ -70,8 +68,7 @@ const ApiResponseViewer = ({ text }: { text: string }) => {
 
   const components = {
     code: CustomCode,
-    
-    // Typography Overrides
+
     h1: ({children}: any) => (
       <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 mt-10 pb-4 border-b border-white/10 leading-tight">
         {children}
@@ -114,8 +111,7 @@ const ApiResponseViewer = ({ text }: { text: string }) => {
         <div>{children}</div>
       </li>
     ),
-    
-    // Special Elements
+
     blockquote: ({children}: any) => (
       <div className="my-8 pl-6 pr-6 py-4 bg-teal-500/5 border-l-2 border-teal-500 rounded-r-xl flex gap-4">
         <Info className="w-6 h-6 text-teal-500 flex-shrink-0 mt-1" />
