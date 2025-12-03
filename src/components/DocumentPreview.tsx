@@ -9,7 +9,6 @@ const DocumentPreview = ({ isOpen, onClose, resourceLink }) => {
   useEffect(() => {
     if (isOpen && resourceLink) {
       setIsLoading(true);
-      // Convert Google Drive view links to preview links
       const match = resourceLink.match(/\/d\/([a-zA-Z0-9_-]+)/);
       const url = match ? `https://drive.google.com/file/d/${match[1]}/preview` : resourceLink;
       setPreviewUrl(url);
@@ -44,7 +43,7 @@ const DocumentPreview = ({ isOpen, onClose, resourceLink }) => {
                   <h2 className="font-bold uppercase tracking-wider text-white text-sm">Document Preview</h2>
                </div>
                <button onClick={onClose} className="p-2 hover:bg-white/10 rounded-full transition text-white/50 hover:text-white">
-                  <X size={20} />
+                  {}<X size={20} />
                </button>
             </div>
 

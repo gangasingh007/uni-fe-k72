@@ -362,11 +362,18 @@ export const resourcesData = {
                             "createdAt": "2025-09-26T09:11:56.442Z"
                         },
                         {
-                            "_id": "68fedd35b205562cf6e0e7fb",
-                            "title": "SAD assignment",
-                            "link": "https://docs.google.com/document/d/10lSAH-iOerYfOQkE03wo5H_qCp_SjoJx/edit?usp=sharing&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "_id": "692fbb00e0640560fe5f8a80",
+                            "title": "SAD Section-C",
+                            "link": "https://drive.google.com/file/d/1E-oE75kyADx1v-VpEhlpA4dxt4Nz5ImJ/view?usp=drive_link",
                             "type": "Document",
-                            "createdAt": "2025-10-27T02:47:17.048Z"
+                            "createdAt": "2025-12-03T04:22:24.111Z"
+                        },
+                        {
+                            "_id": "692fbb39e0640560fe5f8a87",
+                            "title": "SAD Section-D",
+                            "link": "https://drive.google.com/file/d/1BZCymRezbHxzjFmqYvkznCKXsv1PvaxE/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-03T04:23:21.337Z"
                         },
                         {
                             "_id": "68d0f5a75d2b820b99e62e1c",
@@ -447,17 +454,10 @@ export const resourcesData = {
                         },
                         {
                             "_id": "6922f334fd92e2d053f2a63d",
-                            "title": "Intro to SAD",
+                            "title": "Intro to SAD-Designing the System",
                             "link": "https://docs.google.com/presentation/d/1NKM7aCWrdd0gHZPVOicK1N330s_Y27VI/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
                             "type": "Document",
                             "createdAt": "2025-11-23T11:42:44.629Z"
-                        },
-                        {
-                            "_id": "6922f368fd92e2d053f2a644",
-                            "title": "Elemnts and Type of systems",
-                            "link": "https://docs.google.com/presentation/d/1NNnz-xM_GV3tDs_BKGgSlsuehSnc28ao/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-11-23T11:43:36.333Z"
                         },
                         {
                             "_id": "6922f3a5fd92e2d053f2a64b",
