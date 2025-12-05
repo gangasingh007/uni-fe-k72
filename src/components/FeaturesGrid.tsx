@@ -6,6 +6,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 import { useNavigate } from 'react-router-dom';
 import subjectimage from "../assets/subjects.avif"
+import exploreimage from "../assets/explore.avif"
+import datesheetimage from "../assets/datesheet.avif"
+import syllabusimage from "../assets/syllabus.avif"
+
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -20,22 +24,22 @@ const features = [
     icon: Book,
     link:"/syllabus",  
     title: 'Syllabus',
-    description: 'View your syllabus',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800',
-  },
+      description: 'View your syllabus',
+      image: syllabusimage,
+    },
   {
     icon: Calendar,
     link:"/datesheet",
     title: 'DateSheet',
     description: 'View your exam schedule',
-    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800',
+    image: datesheetimage,
   },
   {
     icon: Compass,
     link:"/explore",
     title: 'Explore',
     description: 'Explore the architecture of our platform',
-    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800',
+    image: exploreimage  
   },
 ];
 
@@ -73,8 +77,9 @@ const FeaturesGrid = () => {
       y: e.clientY,
       xPercent: -50,
       yPercent: -50,
-      duration: 0.3,
+      duration: 0.2,
       ease: 'power3.out',
+      overwrite: 'auto',
     });
 
     setHoveredIndex(index);
@@ -97,7 +102,9 @@ const FeaturesGrid = () => {
             <div onClick={() => navigate(feature.link)} key={index}>
               <div
                 className="group relative bg-background p-12 hover:bg-accent transition-all duration-500"
-              onMouseMove={(e) => handleMouseMove(e, index)}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseMove={(e) => handleMouseMove(e, index)}
+                onMouseLeave={handleMouseLeave}
             >
               <feature.icon className="w-16 h-16 mb-8 group-hover:text-background transition-colors" />
               <h3 className="text-title mb-4 group-hover:text-background transition-colors">
@@ -122,8 +129,10 @@ const FeaturesGrid = () => {
       {/* Cursor Image */}
       <div
         ref={cursorImageRef}
-        className="fixed pointer-events-none z-50 w-64 h-64 transition-opacity duration-300"
+        className="fixed rounded-full pointer-events-none z-50 w-64 h-64 transition-opacity duration-300"
         style={{ 
+          top: 0,
+          left: 0,
           opacity: hoveredIndex !== null ? 1 : 0, 
           visibility: hoveredIndex !== null ? 'visible' : 'hidden' }}
       >
@@ -131,7 +140,7 @@ const FeaturesGrid = () => {
           <img
             src={features[hoveredIndex].image}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-[70%] h-[70%] object-cover rounded-xl"
           />
         )}
       </div>
