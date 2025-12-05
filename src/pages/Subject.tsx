@@ -68,14 +68,13 @@ const SubjectPage = () => {
 
     fetchResources();
   }, []);
-
   
   useEffect(() => {
     if (classResources.length > 0 && !selectedClass) {
       const firstClass = classResources[0];
       setSelectedClass(firstClass);
       if (firstClass.subject.length > 0) {
-        setSelectedSubject(firstClass.subject[3]);
+        setSelectedSubject(firstClass.subject[2]);
       }
     }
   }, [classResources]);

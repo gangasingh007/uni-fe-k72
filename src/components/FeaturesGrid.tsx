@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 import { useNavigate } from 'react-router-dom';
+import subjectimage from "../assets/subjects.avif"
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -14,8 +15,7 @@ const features = [
     link:"/subjects/resources",
     title: 'Subjects',
     description: 'View your Subjects',
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800',
-  },
+    image: subjectimage,},
   {
     icon: Book,
     link:"/syllabus",  
@@ -71,6 +71,8 @@ const FeaturesGrid = () => {
     gsap.to(cursorImage, {
       x: e.clientX,
       y: e.clientY,
+      xPercent: -50,
+      yPercent: -50,
       duration: 0.3,
       ease: 'power3.out',
     });
@@ -120,7 +122,7 @@ const FeaturesGrid = () => {
       {/* Cursor Image */}
       <div
         ref={cursorImageRef}
-        className="fixed pointer-events-none z-50 w-64 h-64 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300"
+        className="fixed pointer-events-none z-50 w-64 h-64 transition-opacity duration-300"
         style={{ 
           opacity: hoveredIndex !== null ? 1 : 0, 
           visibility: hoveredIndex !== null ? 'visible' : 'hidden' }}
