@@ -30,9 +30,15 @@ const Index = () => {
   return (
     <div className="bg-background min-h-screen">
       <main>
-        {/* <Hero /> */}
         <FeaturesGrid />
-        {/* <UniversityPartners /> */}
+        <div className="relative overflow-hidden ">
+          <div className="absolute inset-0 rotate-[10deg] opacity-10 pointer-events-none">
+            <UniversityPartners speed={300} textColor={"white"} />
+          </div>
+          <div className="relative z-10 rotate-[-10deg]">
+            <UniversityPartners speed={200} textColor={"teal-500"}/>
+          </div>
+        </div>
         <StudyNowPayLater />
       </main>
       <Footer />

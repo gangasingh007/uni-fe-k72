@@ -1,32 +1,28 @@
 import MarqueeText from './MarqueeText';
 
-const UniversityPartners = () => {
+const UniversityPartners = ({speed , textColor}) => {
   // Updated list to fictional and tech-forward institutions fitting an AI/data/edtech theme
   const dataPartners = [
-    "OpenAI University",
-    "DeepMind Institute",
-    "Codecademy Labs",
-    "Singularity College",
-    "DataCamp Academy",
-    "TensorFlow Institute",
-    "MIT.AI Collective",
-    "Lambda School",
-    "AI4ALL Network",
-    "Bitwise Learning",
+    "Subject Vise Resources",
+    "Maintained Regularly",
+    "AI-Powered Learning",
+    "Data-Driven Insights",
+    "EdTech Innovations",
+    "Interactive Platforms",
   ];
 
   return (
-    <section className="py-20 border-y border-white/10 bg-[#050505] relative">
-      <div className="mb-12 px-6">
+    <section className="py-20  relative overflow-hidden">
+      {/* <div className="mb-12 px-6">
         <p className="text-center text-sm uppercase tracking-[0.2em] text-teal-400/80 font-mono drop-shadow-sm">
-          Empowered by AI-Led Institutions
+          Explore the features
         </p>
-      </div>
+      </div> */}
       <div className="max-w-6xl mx-auto">
         <MarqueeText
           text={dataPartners.join(" • ")}
-          speed={105}
-          className="py-8 text-xl md:text-2xl tracking-wide font-bold text-white/90 opacity-90"
+          speed={speed}
+          className={`py-8 text-xl md:text-2xl tracking-wide font-bold text-${textColor} opacity-90`}
         />
       </div>
       <div className="absolute inset-0 pointer-events-none select-none">

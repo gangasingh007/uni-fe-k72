@@ -53,7 +53,7 @@ const MarqueeText = ({ text, speed = 100, className = '' }: MarqueeTextProps) =>
   }, [text, speed]);
 
   return (
-    <div className={`overflow-hidden whitespace-nowrap ${className}`}>
+    <div className={`whitespace-nowrap ${className}`}>
       <div ref={marqueeRef} className="inline-flex">
         <div ref={firstTextRef} className="flex items-center gap-8 pr-8">
           {Array.from({ length: 10 }).map((_, i) => (
