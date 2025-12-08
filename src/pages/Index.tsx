@@ -33,10 +33,18 @@ const Index = () => {
         <FeaturesGrid />
         <div className="relative overflow-hidden ">
           <div className="absolute inset-0 rotate-[10deg] opacity-10 pointer-events-none">
-            <UniversityPartners speed={300} textColor={"white"} />
+            <UniversityPartners speed={300} background="none" textColor={"white"} />
           </div>
           <div className="relative z-10 rotate-[-10deg]">
-            <UniversityPartners speed={200} textColor={"teal-500"}/>
+            <UniversityPartners speed={200} background="black" textColor={"teal-500"}/>
+          </div>
+        </div>
+        <div className="relative overflow-hidden ">
+          <div className="absolute inset-0 rotate-[10deg] opacity-10 pointer-events-none">
+            <UniversityPartners speed={300} background="none" textColor={"white"} />
+          </div>
+          <div className="relative z-10 rotate-[-10deg]">
+            <UniversityPartners speed={200} background="black" textColor={"teal-500"}/>
           </div>
         </div>
         <StudyNowPayLater />

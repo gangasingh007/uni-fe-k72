@@ -1,6 +1,6 @@
 import MarqueeText from './MarqueeText';
 
-const UniversityPartners = ({speed , textColor}) => {
+const UniversityPartners = ({speed , textColor , background}) => {
   // Updated list to fictional and tech-forward institutions fitting an AI/data/edtech theme
   const dataPartners = [
     "Subject Vise Resources",
@@ -12,7 +12,7 @@ const UniversityPartners = ({speed , textColor}) => {
   ];
 
   return (
-    <section className="py-20  relative overflow-hidden">
+    <section className="py-20  relative w-full ">
       {/* <div className="mb-12 px-6">
         <p className="text-center text-sm uppercase tracking-[0.2em] text-teal-400/80 font-mono drop-shadow-sm">
           Explore the features
@@ -22,7 +22,7 @@ const UniversityPartners = ({speed , textColor}) => {
         <MarqueeText
           text={dataPartners.join(" • ")}
           speed={speed}
-          className={`py-8 text-xl md:text-2xl tracking-wide font-bold text-${textColor} opacity-90`}
+          className={`bg-${background} border-y  border-white/20 py-8 text-xl md:text-2xl tracking-wide font-bold text-${textColor} opacity-90`}
         />
       </div>
       <div className="absolute inset-0 pointer-events-none select-none">
