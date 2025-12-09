@@ -33,11 +33,18 @@ export const resourcesData = {
                             "createdAt": "2025-09-08T03:56:28.875Z"
                         },
                         {
-                            "_id": "68d6522a4959b17e8bb210a9",
-                            "title": "Sec-A Complete Notes",
-                            "link": "https://docs.google.com/document/d/17KvGWZzHrqDaNa6H4zMM1HsM9IGOIedWvuzoevIngNA/edit?usp=sharing",
+                            "_id": "69385da1a00fe6926602cec3",
+                            "title": "Shivang's Notes Sec-C",
+                            "link": "https://drive.google.com/file/d/11WcA7iiiqW4mcnUjj6uiG0uugdGpclR0/view?usp=drive_link",
                             "type": "Document",
-                            "createdAt": "2025-09-26T08:43:22.164Z"
+                            "createdAt": "2025-12-09T17:34:25.873Z"
+                        },
+                        {
+                            "_id": "69385dd3a00fe6926602ceca",
+                            "title": "Shivang's Notes Sec-D",
+                            "link": "https://drive.google.com/file/d/11Yvjg2ILKB-9xZIEE8AWNaoYIbCQFVKs/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T17:35:15.885Z"
                         },
                         {
                             "_id": "69183ed244dccb50d948d7e4",
@@ -45,359 +52,8 @@ export const resourcesData = {
                             "link": "https://docs.google.com/presentation/d/1LM1HJ9qS6J9cRN2XPxpB_2b0FmT136Zn/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
                             "type": "Document",
                             "createdAt": "2025-11-15T08:50:26.283Z"
-                        }
-                    ]
-                },
-                {
-                    "_id": "68bdb9a3a0c778edac25cfa1",
-                    "title": "ASP.net",
-                    "subjectTeacher": "Dr. Avneet Kaur",
-                    "resources": [
-                        {
-                            "_id": "68bdc215a0c778edac25d0ed",
-                            "title": "ASP.net Playlist",
-                            "link": "https://youtube.com/playlist?list=PLMoluEXvWXK6Q1h-5vVX4tzX7-O2FdgZA&si=ZHowq6r-UUufvv3h",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:34:13.888Z"
                         },
-                        {
-                            "_id": "68be52b8b407df568ae59de7",
-                            "title": "Shivang's Notes (Sec-A)",
-                            "link": "https://drive.google.com/file/d/11OoP4rn6VhIFOQnFaEOCfRrzWdGSgInm/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-08T03:51:20.437Z"
-                        },
-                        {
-                            "_id": "68be52d8b407df568ae59df1",
-                            "title": "Shivang's Notes (Sec-B)",
-                            "link": "https://drive.google.com/file/d/11UplDce2iUxV_-mUGMidizd__SZE-SXK/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-08T03:51:52.962Z"
-                        },
-                        {
-                            "_id": "68d6f51846b0ab98d1568670",
-                            "title": "ASP.net Section-A (Complete)",
-                            "link": "https://drive.google.com/file/d/1Nz9GjGxeWzYIq01Xk3VlYD8VCLTk1ZvZ/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-26T20:18:32.328Z"
-                        },
-                        {
-                            "_id": "68d79e9ba064df0b1850abd0",
-                            "title": "Sec-A detailed notes",
-                            "link": "https://drive.google.com/file/d/1rw25tyMmTM5b6ROzwZJFQu9bCZX8ipxi/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-27T08:21:47.477Z"
-                        }
-                    ]
-                },
-                {
-                    "_id": "68bdb9eca0c778edac25cfa7",
-                    "title": "DAA",
-                    "subjectTeacher": "Er. Surleen Kaur",
-                    "resources": [
-                        {
-                            "_id": "68bdbd4aa0c778edac25cfc4",
-                            "title": "What  is an Algorithm",
-                            "link": "https://youtu.be/itbkP50iggM?si=1TYo1b892hwjOb3r",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:13:46.115Z"
-                        },
-                        {
-                            "_id": "68bdbe00a0c778edac25cfd6",
-                            "title": "Asymptotic Notations",
-                            "link": "https://youtu.be/7dz8Iaf_weM?si=007zeFAVzzAWLDfB",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:16:48.453Z"
-                        },
-                        {
-                            "_id": "68bdbe2ca0c778edac25cfe0",
-                            "title": "Comparison of various Time Complexities",
-                            "link": "https://youtu.be/19N3gWGBh5E?si=eXbQ4_TpaP1LSElu",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:17:32.226Z"
-                        },
-                        {
-                            "_id": "68bdbe56a0c778edac25cff2",
-                            "title": "Properties of Asymptotic Notations",
-                            "link": "https://youtu.be/OLttwv_4Ltw?si=_DQ0CYDcM9o09m6d",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:18:14.068Z"
-                        },
-                        {
-                            "_id": "68bdbe78a0c778edac25cffc",
-                            "title": "Question on Comparison of Various Time Complexities",
-                            "link": "https://youtu.be/EH8wQaRI6YE?si=jxOu0W9omRR6BWeP",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:18:48.939Z"
-                        },
-                        {
-                            "_id": "68bdbe9ea0c778edac25d00e",
-                            "title": "What is Recurrence Relation",
-                            "link": "https://youtu.be/NW-naslChdo?si=XxWVOjzJqV1ThiH0",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:19:26.638Z"
-                        },
-                        {
-                            "_id": "68bdbecaa0c778edac25d018",
-                            "title": "Recurrence Relation [ T(n)= n*T(n-1) ]",
-                            "link": "https://youtu.be/icS-e8RaCyo?si=aKcQSuqrjTZKtnnE",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:20:10.672Z"
-                        },
-                        {
-                            "_id": "68bdbef0a0c778edac25d022",
-                            "title": "Recurrence Relation [ T(n)= 2T(n/2) +n]",
-                            "link": "https://youtu.be/VHGisohk3Ck?si=Ua9onKn6pNOomz9X",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:20:48.854Z"
-                        },
-                        {
-                            "_id": "68bdbf13a0c778edac25d02c",
-                            "title": "Recurrence Relation [ T(n)= T(n/2) + c]",
-                            "link": "https://youtu.be/x0n75VFd31U?si=u75uM1dVqIs_GukC",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:21:23.127Z"
-                        },
-                        {
-                            "_id": "68bdbf39a0c778edac25d036",
-                            "title": "Recurrence Relation [ T(n)= T(n-1) +logn]",
-                            "link": "https://youtu.be/JCX8noGdY7k?si=xrfXxjxYo_kX026L",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:22:01.722Z"
-                        },
-                        {
-                            "_id": "68bdbf7ba0c778edac25d040",
-                            "title": "Binary Search Iterative Method",
-                            "link": "https://youtu.be/C2apEw9pgtw?si=vlKVJRdbmBNKfSp3",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:23:07.825Z"
-                        },
-                        {
-                            "_id": "68bdbf91a0c778edac25d04a",
-                            "title": "Binary Search Recursive Method",
-                            "link": "https://youtu.be/uEUXGcc2VXM?si=RVOrSexeVd8AHn2n",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:23:29.753Z"
-                        },
-                        {
-                            "_id": "68bdbfb0a0c778edac25d054",
-                            "title": "Min Max Algorithm with Divide and Conquer Method",
-                            "link": "https://youtu.be/g8DJiGWoQmk?si=XYAP4dmfSeNm35r5",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:24:00.950Z"
-                        },
-                        {
-                            "_id": "68bdbfc5a0c778edac25d05e",
-                            "title": "Quick Sort Algorithm",
-                            "link": "https://youtu.be/7h1s2SojIRw?si=1dbXVSgqEy064AEA",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:24:21.767Z"
-                        },
-                        {
-                            "_id": "68bdbfd7a0c778edac25d068",
-                            "title": "Quick Sort Analysis",
-                            "link": "https://youtu.be/-qOVVRIZzao?si=fPpk8UgR9l1qCPUR",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:24:39.743Z"
-                        },
-                        {
-                            "_id": "68bdbfeaa0c778edac25d072",
-                            "title": "Greedy Method",
-                            "link": "https://youtu.be/ARvQcqJ_-NY?si=A7TQGLzXX5Ou5bX6",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:24:58.965Z"
-                        },
-                        {
-                            "_id": "68bdbff9a0c778edac25d07c",
-                            "title": "KnapSack Problem",
-                            "link": "https://youtu.be/oTTzNMHM05I?si=dvIOWAItVs9BxOid",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:25:13.227Z"
-                        },
-                        {
-                            "_id": "68bdc018a0c778edac25d086",
-                            "title": "Prims and Kruskal's Algorithm",
-                            "link": "https://youtu.be/4ZlRH0eK-qQ?si=v6oB71cUwvZrTSI9",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:25:44.655Z"
-                        },
-                        {
-                            "_id": "68bdc02aa0c778edac25d090",
-                            "title": "Dijkrstra Algorithm",
-                            "link": "https://youtu.be/XB4MIexjvY0?si=Z3kjUa3Gwklies3Q",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:26:02.403Z"
-                        },
-                        {
-                            "_id": "68bdc03ea0c778edac25d09a",
-                            "title": "Knapsack's Problem",
-                            "link": "https://youtu.be/M79iHjAG1tg?si=nZqseUsX8VCAZLhv",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:26:22.222Z"
-                        },
-                        {
-                            "_id": "68bdc053a0c778edac25d0a4",
-                            "title": "Multistage Graph",
-                            "link": "https://youtu.be/9iE9Mj4m8jk?si=dl_MFNC8Nb282IOH",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:26:43.334Z"
-                        },
-                        {
-                            "_id": "68bdc07ea0c778edac25d0ae",
-                            "title": "Knapsack Problem (Program)",
-                            "link": "https://youtu.be/zRza99HPvkQ?si=gnmIGJTxNU-9KhWe",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:27:26.088Z"
-                        },
-                        {
-                            "_id": "68bdc0a2a0c778edac25d0b8",
-                            "title": "Floyd-Warshall Algorithm",
-                            "link": "https://youtu.be/oNI0rf2P9gE?si=gSv3TJuHU6n5z6p8",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:28:02.866Z"
-                        },
-                        {
-                            "_id": "68bdc0c7a0c778edac25d0c2",
-                            "title": "Bellman Ford Algorithm-Single Source Shortest Path",
-                            "link": "https://youtu.be/FtN3BYH2Zes?si=KhVXpVRvELc1jrLP",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:28:39.567Z"
-                        },
-                        {
-                            "_id": "68bdc0dca0c778edac25d0cc",
-                            "title": "Traveling Salesman Problem",
-                            "link": "https://youtu.be/Q4zHb-Swzro?si=qbLh91nd26ii_TuC",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:29:00.940Z"
-                        },
-                        {
-                            "_id": "68bdc0f2a0c778edac25d0d6",
-                            "title": "Optimal Binary Search Tree Successful and Unsuccessful Probability",
-                            "link": "https://youtu.be/wAy6nDMPYAE?si=SgR6UD6WGwD0B5Jl",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:29:22.630Z"
-                        },
-                        {
-                            "_id": "68d6c6fa91a2ec59b4554eef",
-                            "title": "Introduction to Backtracking",
-                            "link": "https://youtu.be/DKCbsiDBN6c?si=jq5q4c2qOxkXXiv2",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-26T17:01:46.075Z"
-                        },
-                        {
-                            "_id": "68d6c71691a2ec59b4554ef9",
-                            "title": "N Queens Problem using Backtracking",
-                            "link": "https://youtu.be/xFv_Hl4B83A?si=eEKJHv0-z8BNUX-I",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-26T17:02:14.873Z"
-                        },
-                        {
-                            "_id": "68d6c72a91a2ec59b4554f03",
-                            "title": "Sum Of Subsets Problem - Backtracking",
-                            "link": "https://youtu.be/kyLxTdsT8ws?si=ujZ4XKGJqy8TdG_d",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-26T17:02:34.480Z"
-                        },
-                        {
-                            "_id": "68d6c73d91a2ec59b4554f0d",
-                            "title": "Graph Coloring Problem - Backtracking",
-                            "link": "https://youtu.be/052VkKhIaQ4?si=O1y1eGmmAK4yA7eG",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-26T17:02:53.342Z"
-                        },
-                        {
-                            "_id": "6932a15d92c2fb40122a20f3",
-                            "title": "Branch and Bound:General Method",
-                            "link": "https://www.youtube.com/watch?v=3RBNPc0_Q6g",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-12-05T09:09:49.729Z"
-                        },
-                        {
-                            "_id": "6932a18e92c2fb40122a20fa",
-                            "title": "Branch and Bound: Traveling Salesman problem",
-                            "link": "https://www.youtube.com/watch?v=1FEP_sNb62k",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-12-05T09:10:38.048Z"
-                        },
-                        {
-                            "_id": "6932a1c192c2fb40122a2101",
-                            "title": "Branch and Bound:Knapsack Problem",
-                            "link": "https://www.youtube.com/watch?v=yV1d-b_NeK8",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-12-05T09:11:29.679Z"
-                        },
-                        {
-                            "_id": "6932a1da92c2fb40122a2108",
-                            "title": "Branch and Bound:Assignment Problem",
-                            "link": "https://www.youtube.com/watch?v=bZLvbg-dkzQ",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-12-05T09:11:54.579Z"
-                        },
-                        {
-                            "_id": "6932a33d92c2fb40122a210f",
-                            "title": "Hard Problems",
-                            "link": "https://youtu.be/e2cF8a5aAhE?si=hMKOmdt58TYbiauG",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-12-05T09:17:49.429Z"
-                        },
-                        {
-                            "_id": "68d6c86c91a2ec59b4554f2a",
-                            "title": "DAA Section-A (Part-1)",
-                            "link": "https://drive.google.com/file/d/1fKHU6WHvkIyQC4jxfGFqzvCcrpsUz2bo/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-26T17:07:56.970Z"
-                        },
-                        {
-                            "_id": "68d6c88c91a2ec59b4554f34",
-                            "title": "DAA-Dynamic Programming",
-                            "link": "https://drive.google.com/file/d/1nBD3zRy8HdsuMfkhXWlK4-HmVRVF5Cfl/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-26T17:08:28.432Z"
-                        },
-                        {
-                            "_id": "68d6c8a291a2ec59b4554f3e",
-                            "title": "DP-Algos",
-                            "link": "https://drive.google.com/file/d/1cWcmmKuJVNEMYGV9OH3FIP8r8aoeoMUP/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-26T17:08:50.952Z"
-                        },
-                        {
-                            "_id": "68e09fcc2338860733655c80",
-                            "title": "What is an Algorithm",
-                            "link": "https://drive.google.com/file/d/1JwiqqkZrSatWmGeBxHqZXluhrlTmD9kM/view?usp=sharing",
-                            "type": "Document",
-                            "createdAt": "2025-10-04T04:17:16.718Z"
-                        },
-                        {
-                            "_id": "68e261d2aec31620ab797240",
-                            "title": "Divide and Conquer",
-                            "link": "https://drive.google.com/file/d/1IKj0Pxfc8LmDyhOcSQd3nIxqSaTLkGur/view?usp=sharing",
-                            "type": "Document",
-                            "createdAt": "2025-10-05T12:17:22.854Z"
-                        },
-                        {
-                            "_id": "6932a38492c2fb40122a2116",
-                            "title": "Section-D notes",
-                            "link": "https://drive.google.com/file/d/11KFgau3T6iVaZx4xGxKGhMrlsizT2fyL/view?usp=sharing",
-                            "type": "Document",
-                            "createdAt": "2025-12-05T09:19:00.551Z"
-                        }
-                    ]
-                },
-            ]
-        },
-        {
-            "_id": "68b9b2faa40e9fb372a62902",
-            "courseName": "Btech",
-            "section": "B",
-            "semester": "5",
-            "subject": [
-                {
-                    "_id": "68c17171cb3b0dd6c35ef0ef",
-                    "title": "RDBMS",
-                    "subjectTeacher": "Er. Aditika",
-                    "resources": [
-                        {
+                         {
                             "_id": "68d3a7f881a1f08520a30dd9",
                             "title": "3NF",
                             "link": "https://drive.google.com/file/d/1aQKbmcebKP8GtwY-WWfvQge4ysAf50tH/view?usp=drive_link",
@@ -494,7 +150,114 @@ export const resourcesData = {
                             "link": "https://drive.google.com/file/d/11rZJykV6lwwDuAGPEwUfea6OtLwY8duj/view?usp=drive_link",
                             "type": "Document",
                             "createdAt": "2025-09-24T08:17:18.113Z"
+                        },
+                        {
+                            "_id": "69384dc9a00fe6926602ce8c",
+                            "title": "Section-C Query Optimization",
+                            "link": "https://drive.google.com/file/d/195xVhSK2dWdZxWCROAnIVjUhgkzT9qmG/view?usp=sharing",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:26:49.662Z"
+                        },
+                        {
+                            "_id": "69384df8a00fe6926602ce93",
+                            "title": "Query decomposition and role of relational algebra",
+                            "link": "https://drive.google.com/file/d/1RFoXL2HChsIL_w-2mAU27DHJP7oshFq_/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:27:36.401Z"
+                        },
+                        {
+                            "_id": "69384e2ca00fe6926602ce9a",
+                            "title": "Created Sorted Procedures",
+                            "link": "https://drive.google.com/file/d/1HPVmLb58SNqSomQG3qgvogRt31-n0H1r/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:28:28.902Z"
+                        },
+                        {
+                            "_id": "69384e4aa00fe6926602cea1",
+                            "title": "Intro to SQl upto Indexes",
+                            "link": "https://drive.google.com/file/d/1Ux2VWooVMxyhK6jB2eAlFG0qaLZFBnmA/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:28:58.583Z"
+                        },
+                        {
+                            "_id": "69384e5ea00fe6926602cea8",
+                            "title": "Advanced SQL",
+                            "link": "https://drive.google.com/file/d/1OpehIcmjkaryCMBMssjqyz9DBEc8EpT_/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:29:18.681Z"
+                        },
+                        {
+                            "_id": "69384ee9a00fe6926602ceb2",
+                            "title": "SQl",
+                            "link": "https://drive.google.com/file/d/1KXuAt64d7FLElsf5W5qACzZJuSFj8U2n/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:31:37.538Z"
+                        },
+                        {
+                            "_id": "69384efda00fe6926602ceb9",
+                            "title": "Section-D complete",
+                            "link": "https://drive.google.com/file/d/1Y6eeatQqK9LeHA7HQjcR3YBSI8npncRG/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-09T16:31:57.365Z"
                         }
+                    ]
+                },
+                {
+                    "_id": "68bdb9a3a0c778edac25cfa1",
+                    "title": "ASP.net",
+                    "subjectTeacher": "Dr. Avneet Kaur",
+                    "resources": [
+                        {
+                            "_id": "68bdc215a0c778edac25d0ed",
+                            "title": "ASP.net Playlist",
+                            "link": "https://youtube.com/playlist?list=PLMoluEXvWXK6Q1h-5vVX4tzX7-O2FdgZA&si=ZHowq6r-UUufvv3h",
+                            "type": "Yt-Link",
+                            "createdAt": "2025-09-07T17:34:13.888Z"
+                        },
+                        {
+                            "_id": "68be52b8b407df568ae59de7",
+                            "title": "Shivang's Notes (Sec-A)",
+                            "link": "https://drive.google.com/file/d/11OoP4rn6VhIFOQnFaEOCfRrzWdGSgInm/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-09-08T03:51:20.437Z"
+                        },
+                        {
+                            "_id": "68be52d8b407df568ae59df1",
+                            "title": "Shivang's Notes (Sec-B)",
+                            "link": "https://drive.google.com/file/d/11UplDce2iUxV_-mUGMidizd__SZE-SXK/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-09-08T03:51:52.962Z"
+                        },
+                        {
+                            "_id": "68d6f51846b0ab98d1568670",
+                            "title": "ASP.net Section-A (Complete)",
+                            "link": "https://drive.google.com/file/d/1Nz9GjGxeWzYIq01Xk3VlYD8VCLTk1ZvZ/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-09-26T20:18:32.328Z"
+                        },
+                        {
+                            "_id": "68d79e9ba064df0b1850abd0",
+                            "title": "Sec-A detailed notes",
+                            "link": "https://drive.google.com/file/d/1rw25tyMmTM5b6ROzwZJFQu9bCZX8ipxi/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-09-27T08:21:47.477Z"
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            "_id": "68b9b2faa40e9fb372a62902",
+            "courseName": "Btech",
+            "section": "B",
+            "semester": "5",
+            "subject": [
+                {
+                    "_id": "68c17171cb3b0dd6c35ef0ef",
+                    "title": "RDBMS",
+                    "subjectTeacher": "Er. Aditika",
+                    "resources": [
+                       
                     ]
                 },
                 {

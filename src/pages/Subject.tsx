@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -74,12 +74,11 @@ const SubjectPage = () => {
       const firstClass = classResources[0];
       setSelectedClass(firstClass);
       if (firstClass.subject.length > 0) {
-        setSelectedSubject(firstClass.subject[2]);
+        setSelectedSubject(firstClass.subject[0]);
       }
     }
   }, [classResources]);
 
-  // Animation on selection change
   useGSAP(() => {
     if (contentRef.current && !loading) {
       gsap.fromTo(contentRef.current, 
