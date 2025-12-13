@@ -7,213 +7,10 @@ export const resourcesData = {
             "semester": "5",
             "subject": [
                 {
-                    "_id": "68b9a498a40e9fb372a628b1",
-                    "title": "RDBMS",
-                    "subjectTeacher": "Dr. Hardeep Singh",
-                    "resources": [
-                        {
-                            "_id": "68b9a4b0a40e9fb372a628bc",
-                            "title": "SQL queries",
-                            "link": "https://drive.google.com/file/d/1b2FlvJsP4FsiG80Za0ru_2VeQBWfBf6H/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-04T14:39:44.041Z"
-                        },
-                        {
-                            "_id": "68be53beb407df568ae59e20",
-                            "title": "Shivang's Notes (Sec-A)",
-                            "link": "https://drive.google.com/file/d/11dwvgI2DkB6az0HBFABAEQUCsNRS-wNm/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-08T03:55:42.103Z"
-                        },
-                        {
-                            "_id": "68be53ecb407df568ae59e32",
-                            "title": "Shivang's Notes (Sec-B)",
-                            "link": "https://drive.google.com/file/d/11gnY1dyrAjuPjvVHbQ_yYhlmmO4H1u7i/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-08T03:56:28.875Z"
-                        },
-                        {
-                            "_id": "69385da1a00fe6926602cec3",
-                            "title": "Shivang's Notes Sec-C",
-                            "link": "https://drive.google.com/file/d/11WcA7iiiqW4mcnUjj6uiG0uugdGpclR0/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T17:34:25.873Z"
-                        },
-                        {
-                            "_id": "69385dd3a00fe6926602ceca",
-                            "title": "Shivang's Notes Sec-D",
-                            "link": "https://drive.google.com/file/d/11Yvjg2ILKB-9xZIEE8AWNaoYIbCQFVKs/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T17:35:15.885Z"
-                        },
-                        {
-                            "_id": "69183ed244dccb50d948d7e4",
-                            "title": "SQL queries and BCNF",
-                            "link": "https://docs.google.com/presentation/d/1LM1HJ9qS6J9cRN2XPxpB_2b0FmT136Zn/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
-                            "type": "Document",
-                            "createdAt": "2025-11-15T08:50:26.283Z"
-                        },
-                         {
-                            "_id": "68d3a7f881a1f08520a30dd9",
-                            "title": "3NF",
-                            "link": "https://drive.google.com/file/d/1aQKbmcebKP8GtwY-WWfvQge4ysAf50tH/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:12:40.504Z"
-                        },
-                        {
-                            "_id": "68d3a82181a1f08520a30de3",
-                            "title": "ANSI SPARC Architecture Schema",
-                            "link": "https://drive.google.com/file/d/1XW5HSJkOYZYpvOqW_uvVx1XeJfiZvWrL/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:13:21.943Z"
-                        },
-                        {
-                            "_id": "68d3a83081a1f08520a30ded",
-                            "title": "BCNF, 4NF, 5NF",
-                            "link": "https://drive.google.com/file/d/19x8aRDz-QEQEjXKNC_NTCEPQGZ-GfVQi/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:13:36.071Z"
-                        },
-                        {
-                            "_id": "68d3a84681a1f08520a30df7",
-                            "title": "ER Model",
-                            "link": "https://drive.google.com/file/d/1Lo21fASqxCOo4s2spAX9AyidxcKIJxjn/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:13:58.389Z"
-                        },
-                        {
-                            "_id": "68d3a85481a1f08520a30e01",
-                            "title": "Integrity",
-                            "link": "https://drive.google.com/file/d/1_EHji1_KU0DdNYwxcQd5rziqGvYsU3qL/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:14:12.628Z"
-                        },
-                        {
-                            "_id": "68d3a87081a1f08520a30e0b",
-                            "title": "Introduction to SQL upto indexes",
-                            "link": "https://drive.google.com/file/d/1Q0GbtT5Cs7dcsu5pOmIRNXamVxxGAdtR/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:14:40.786Z"
-                        },
-                        {
-                            "_id": "68d3a88281a1f08520a30e15",
-                            "title": "Keys in RDBMS",
-                            "link": "https://drive.google.com/file/d/1q5Q-tg5iteQq8AsSzHac2ezZaRXqZQra/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:14:58.784Z"
-                        },
-                        {
-                            "_id": "68d3a89181a1f08520a30e1f",
-                            "title": "Normalization",
-                            "link": "https://drive.google.com/file/d/1sJ58efK7F562vQovvusmkTkMCZcUysRu/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:15:13.324Z"
-                        },
-                        {
-                            "_id": "68d3a8ae81a1f08520a30e29",
-                            "title": "Relational Algebra and Relational Calculus",
-                            "link": "https://drive.google.com/file/d/1bd-ntV7Wy8Vqg0A5Cs9qnmDteSrlpvER/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:15:42.715Z"
-                        },
-                        {
-                            "_id": "68d3a8bd81a1f08520a30e33",
-                            "title": "Relational Algebra",
-                            "link": "https://drive.google.com/file/d/1VEwvfDlmrbYnYC43Hptz2kMtLJbyc30b/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:15:57.689Z"
-                        },
-                        {
-                            "_id": "68d3a8cd81a1f08520a30e3d",
-                            "title": "Relational Calculus",
-                            "link": "https://drive.google.com/file/d/1phDSwZr-0GJkHrh0_Wsfx75RhfjI2ntu/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:16:13.942Z"
-                        },
-                        {
-                            "_id": "68d3a8e181a1f08520a30e47",
-                            "title": "Relational Data Model",
-                            "link": "https://drive.google.com/file/d/1VctyW6qpte8o7nj-YOdXZRk16OGbKhdd/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:16:33.207Z"
-                        },
-                        {
-                            "_id": "68d3a8fe81a1f08520a30e51",
-                            "title": "Section-A upto DBA",
-                            "link": "https://drive.google.com/file/d/1g5kUZ6s_gz8tcqdEeiTANxLtEOTl52v1/view?usp=sharing",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:17:02.219Z"
-                        },
-                        {
-                            "_id": "68d3a90e81a1f08520a30e5b",
-                            "title": "SQL Queries Examples",
-                            "link": "https://drive.google.com/file/d/11rZJykV6lwwDuAGPEwUfea6OtLwY8duj/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-24T08:17:18.113Z"
-                        },
-                        {
-                            "_id": "69384dc9a00fe6926602ce8c",
-                            "title": "Section-C Query Optimization",
-                            "link": "https://drive.google.com/file/d/195xVhSK2dWdZxWCROAnIVjUhgkzT9qmG/view?usp=sharing",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:26:49.662Z"
-                        },
-                        {
-                            "_id": "69384df8a00fe6926602ce93",
-                            "title": "Query decomposition and role of relational algebra",
-                            "link": "https://drive.google.com/file/d/1RFoXL2HChsIL_w-2mAU27DHJP7oshFq_/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:27:36.401Z"
-                        },
-                        {
-                            "_id": "69384e2ca00fe6926602ce9a",
-                            "title": "Created Sorted Procedures",
-                            "link": "https://drive.google.com/file/d/1HPVmLb58SNqSomQG3qgvogRt31-n0H1r/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:28:28.902Z"
-                        },
-                        {
-                            "_id": "69384e4aa00fe6926602cea1",
-                            "title": "Intro to SQl upto Indexes",
-                            "link": "https://drive.google.com/file/d/1Ux2VWooVMxyhK6jB2eAlFG0qaLZFBnmA/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:28:58.583Z"
-                        },
-                        {
-                            "_id": "69384e5ea00fe6926602cea8",
-                            "title": "Advanced SQL",
-                            "link": "https://drive.google.com/file/d/1OpehIcmjkaryCMBMssjqyz9DBEc8EpT_/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:29:18.681Z"
-                        },
-                        {
-                            "_id": "69384ee9a00fe6926602ceb2",
-                            "title": "SQl",
-                            "link": "https://drive.google.com/file/d/1KXuAt64d7FLElsf5W5qACzZJuSFj8U2n/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:31:37.538Z"
-                        },
-                        {
-                            "_id": "69384efda00fe6926602ceb9",
-                            "title": "Section-D complete",
-                            "link": "https://drive.google.com/file/d/1Y6eeatQqK9LeHA7HQjcR3YBSI8npncRG/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-12-09T16:31:57.365Z"
-                        }
-                    ]
-                },
-                {
                     "_id": "68bdb9a3a0c778edac25cfa1",
                     "title": "ASP.net",
                     "subjectTeacher": "Dr. Avneet Kaur",
                     "resources": [
-                        {
-                            "_id": "68bdc215a0c778edac25d0ed",
-                            "title": "ASP.net Playlist",
-                            "link": "https://youtube.com/playlist?list=PLMoluEXvWXK6Q1h-5vVX4tzX7-O2FdgZA&si=ZHowq6r-UUufvv3h",
-                            "type": "Yt-Link",
-                            "createdAt": "2025-09-07T17:34:13.888Z"
-                        },
                         {
                             "_id": "68be52b8b407df568ae59de7",
                             "title": "Shivang's Notes (Sec-A)",
@@ -228,43 +25,6 @@ export const resourcesData = {
                             "type": "Document",
                             "createdAt": "2025-09-08T03:51:52.962Z"
                         },
-                        {
-                            "_id": "68d6f51846b0ab98d1568670",
-                            "title": "ASP.net Section-A (Complete)",
-                            "link": "https://drive.google.com/file/d/1Nz9GjGxeWzYIq01Xk3VlYD8VCLTk1ZvZ/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-26T20:18:32.328Z"
-                        },
-                        {
-                            "_id": "68d79e9ba064df0b1850abd0",
-                            "title": "Sec-A detailed notes",
-                            "link": "https://drive.google.com/file/d/1rw25tyMmTM5b6ROzwZJFQu9bCZX8ipxi/view?usp=drive_link",
-                            "type": "Document",
-                            "createdAt": "2025-09-27T08:21:47.477Z"
-                        }
-                    ]
-                },
-            ]
-        },
-        {
-            "_id": "68b9b2faa40e9fb372a62902",
-            "courseName": "Btech",
-            "section": "B",
-            "semester": "5",
-            "subject": [
-                {
-                    "_id": "68c17171cb3b0dd6c35ef0ef",
-                    "title": "RDBMS",
-                    "subjectTeacher": "Er. Aditika",
-                    "resources": [
-                       
-                    ]
-                },
-                {
-                    "_id": "68c800a9ef7615d03a018a42",
-                    "title": "ASP.net",
-                    "subjectTeacher": "Dr. Veerawali Behal",
-                    "resources": [
                         {
                             "_id": "68d050b606664c694bf8662a",
                             "title": "User Session",
@@ -362,10 +122,108 @@ export const resourcesData = {
                             "link": "https://docs.google.com/document/d/1XliKQU3xoAIf0ezwbWHtCh0ZZp0x7SRG/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
                             "type": "Document",
                             "createdAt": "2025-09-21T19:28:59.992Z"
+                        },
+                         {
+                            "_id": "693d394c008cbd721dc8afe3",
+                            "title": "Page life Cycle",
+                            "link": "https://drive.google.com/file/d/1v4VaE-JqABivQGI-G072o27xwBvDb5bN/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:00:44.319Z"
+                        },
+                        {
+                            "_id": "693d3977008cbd721dc8afea",
+                            "title": "Page Events",
+                            "link": "https://drive.google.com/file/d/1Ant9NR6YHxhjCnoNj-Wy1PEAowtsYhkn/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:01:27.421Z"
+                        },
+                        {
+                            "_id": "693d3990008cbd721dc8aff1",
+                            "title": "Scope of Events",
+                            "link": "https://drive.google.com/file/d/10hQRwYb-0Xy1-mJvIlKV4N0AhJP0uZ1c/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:01:52.815Z"
+                        },
+                        {
+                            "_id": "693d39a4008cbd721dc8aff8",
+                            "title": "CAS",
+                            "link": "https://drive.google.com/file/d/1SoRN-U--dBVcKDOt-ql3b-jQByzqLqQk/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:02:12.929Z"
+                        },
+                        {
+                            "_id": "693d39b8008cbd721dc8afff",
+                            "title": "Cookies",
+                            "link": "https://docs.google.com/document/d/1cVTaeG8Jo-xnYOrvkx9zMiN0iAsDucLa/edit?usp=drive_link&ouid=101070998960209493258&rtpof=true&sd=true",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:02:32.341Z"
+                        },
+                        {
+                            "_id": "693d39cd008cbd721dc8b006",
+                            "title": "Database Connection",
+                            "link": "https://drive.google.com/file/d/1tJ-unbgMiMgMdL3vJ07LhO7_rBI-N06T/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:02:53.541Z"
+                        },
+                        {
+                            "_id": "693d39e1008cbd721dc8b00d",
+                            "title": "Auth and Authorization",
+                            "link": "https://drive.google.com/file/d/1u53rfrUuCceDboNPdKJY_Ry7ZErCBQ-b/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:03:13.695Z"
+                        },
+                        {
+                            "_id": "693d3a0f008cbd721dc8b014",
+                            "title": "SQL Data Source",
+                            "link": "https://drive.google.com/file/d/1AaOnDyq7AUCwlF58RCkCfl7Wsad_cTBv/view?usp=sharing",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:03:59.016Z"
+                        },
+                        {
+                            "_id": "693d3a2d008cbd721dc8b01b",
+                            "title": "Role Based Security",
+                            "link": "https://drive.google.com/file/d/1PtaLQUxhCM4kcT405Z0dHaeI6bK-pBfs/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:04:29.983Z"
+                        },
+                        {
+                            "_id": "693d3a53008cbd721dc8b022",
+                            "title": "OOPS",
+                            "link": "https://drive.google.com/file/d/1lN_bOmwbl6i0yTlBP6Tt5essIQCFDp77/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:05:07.729Z"
+                        },
+                        {
+                            "_id": "693d3a6e008cbd721dc8b029",
+                            "title": "GridView",
+                            "link": "https://drive.google.com/file/d/1C5Q90rnMD48vKZXLs09as6n-bu9si9fi/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:05:34.913Z"
+                        },
+                        {
+                            "_id": "693d3a7d008cbd721dc8b030",
+                            "title": "OOPS-2",
+                            "link": "https://drive.google.com/file/d/1beNXbWhm8JXtDbQWPCEGoQGVChzWEcYz/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:05:49.359Z"
+                        },
+                        {
+                            "_id": "693d3a93008cbd721dc8b037",
+                            "title": "Repeater Control",
+                            "link": "https://drive.google.com/file/d/1Bm4BFvq3LFJ5KY9Gd2FGt0DtA5A6s7Al/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:06:11.888Z"
+                        },
+                        {
+                            "_id": "693d3ab6008cbd721dc8b03e",
+                            "title": "Web Config",
+                            "link": "https://drive.google.com/file/d/1McvEre-oOZenyW1ccEZCe2GSWPySotEX/view?usp=drive_link",
+                            "type": "Document",
+                            "createdAt": "2025-12-13T10:06:46.089Z"
                         }
                     ]
-                }
+                },
             ]
-        }
+        },
     ]
-}
+};
